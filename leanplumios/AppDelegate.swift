@@ -7,13 +7,58 @@
 
 import UIKit
 
+#if DEBUG
+    import AdSupport
+#endif
+import Leanplum //using 3.2.1
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    // You may notice two different Leanplum apps on your App Settings page, one for development and one for production. To reduce the risk of using the wrong key in your development cycle, we have created two apps for you. We would recommend in while you are in your development phase, using the API keys from the development version of your Leanplum App. Once you are ready to go-live, switch over to the API and production key from the production LP app
+    
+    // When you're ready for final QA, you can switch to the live app, but use the app in Development mode. This is where you copy over your messages, sync new variables, or move other content from your test app to the live app.
 
+    var debugAppId: String = "app_xvhLIDh3sIs71lx6yMYEW8LhhodWlFwvAUPeM4JoCSQ"
+    var debugDevKey: String = "dev_nUVY7kDD4NFROS0HSBB8c1UDnRwb17tb5d1smWQI93o"
+    var prodAppId: String = "app_IF2eLLGxH8jme6fyd4qe3AnJDPuyuV2W6mYLMORepkQ"
+    var prodProdKey: String = "dev_08KT3uYYrZdwku6wgMOiZywlYETW6r8j9XetCriYdlM" //devKey, does the production app come with a dev key so you can test before pushing to live?
+    
+    // Development mode keeps your team's user activity out of Analytics. This allows you to try things out in Leanplum without worrying about polluting your actual user data in Analytics. You can view your team's testing activity in the "Developer Activity" section of analytics.
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        #if DEBUG
+            Leanplum.setDeviceId(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
+        Leanplum.setAppId(debugAppId,
+                          developmentKey:debugDevKey)
+          #else
+            Leanplum.setAppId(prodAppId,
+              productionKey: prodProdKey)
+          #endif
+        
+        // Optional: Tracks in-app purchases automatically as the "Purchase" event.
+        // To require valid receipts upon purchase or change your reported
+        // currency code from USD, update your app settings.
+        // Leanplum.trackInAppPurchases()
+        
+        // Sets the app version, which otherwise defaults to
+        // the build number (CFBundleVersion).
+        //Leanplum.setAppVersion("1.0.0")
+        
+        //set variables
+        //let showAds = Var(name: "showAds", boolean: false) // Whether or not to show ads in the app.
+        
+        //Leanplum.onVariablesChanged {
+            //print(showAds.boolValue())
+        //}
+
+        
+        // Starts a new session and updates the app content from Leanplum.
+        Leanplum.start(attributes: ["age": 26]) //Added age attribute for audience
+        
+        
         return true
     }
 
