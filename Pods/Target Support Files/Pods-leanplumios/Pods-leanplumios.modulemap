@@ -1,0 +1,6 @@
+framework module Pods_leanplumios {
+  umbrella header "Pods-leanplumios-umbrella.h"
+
+  export *
+  module * { export * }
+}

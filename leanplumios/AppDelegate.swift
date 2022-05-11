@@ -48,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Leanplum.setAppVersion("1.0.0")
         
         //set variables
-        //let showAds = Var(name: "showAds", boolean: false) // Whether or not to show ads in the app.
+        
         
         //Leanplum.onVariablesChanged {
             //print(showAds.boolValue())
@@ -56,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         
         // Starts a new session and updates the app content from Leanplum.
-        Leanplum.start(attributes: ["age": 26]) //Added age attribute for audience
+        Leanplum.start() //Added age attribute for audience
         
         
         return true

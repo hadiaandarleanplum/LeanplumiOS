@@ -1,0 +1,1408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		020E16CB6C110C463F45A1DBDBECD84C /* LPRichInterstitialMessageTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BF774BD3292239B51B067B5189FD31 /* LPRichInterstitialMessageTemplate.m */; };
+		03FFC8EABDA88D89276CED439F95F19A /* LPPushNotificationsHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F01A6BFCD2A3BF50B5860C67747088A5 /* LPPushNotificationsHandler.m */; };
+		04EA1C8F37C9FAA31D9AA72938D2E897 /* LPRegisterForPushMessageTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B3F70B68921C56B33DA87A37805ADE /* LPRegisterForPushMessageTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07F02E18276228C181908E78D9EAAAD1 /* LPNetworkFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BB78787F3CED9B89D4A0448A6E2E56 /* LPNetworkFactory.m */; };
+		093B7DB52819F2B2E84B1880FDAD0924 /* LPContextualValues.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD5D8D74C133FE7528A9F7A254CE9AC /* LPContextualValues.m */; };
+		09925627CC6C3E2EA548B1A0646F89D5 /* LPPushMessageTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BA26B225C92A5BE27338065BB9F8CF /* LPPushMessageTemplate.m */; };
+		0A602173091118279D398997BF0C2697 /* LPPopupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C0D3A6BEAAD94606A05097B819D7FB9 /* LPPopupViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AE57A08BFAC5FEA85439A71F967DEE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32EF03652315294BA65D483F3DEB70D /* Foundation.framework */; };
+		0CFA7245FA962B16DF9C621D0913324C /* Leanplum.m in Sources */ = {isa = PBXBuildFile; fileRef = 1224B6107B53C01494E50F52971EEB2B /* Leanplum.m */; };
+		0E4310AF0F29DEFE13365B4721A5E7D8 /* LPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C8F25D72328109BF8D236DED24C799 /* LPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E5BC4671B58A9D30F5948CCC0E30722 /* LPRequestSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 041292A6B678EBD88569EBEDA47348BC /* LPRequestSender.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F537474B1FBD03C7348018F80888EC0 /* LPWebInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBC087AB08B386204CEE47995188B4 /* LPWebInterstitialViewController.m */; };
+		0FF8292E04A235B4272948E1220DD75D /* LPOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FABBDAC70D858B72641A9A6A4C773CC6 /* LPOperationQueue.m */; };
+		10221419EF75D5EB3B49E672DD418044 /* LPDeferMessageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 96B238B62FB2B6A13452BCEBCDF19B93 /* LPDeferMessageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10B32B1AA5B121AB1A163EDC9B080BC4 /* LPRequestBatchFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0344ED117A4773C11136927BBA2B85 /* LPRequestBatchFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		113A105DE4BFD2D1568D9F53AC3FD866 /* Leanplum-iOS-SDK-Leanplum-iOS-SDK in Resources */ = {isa = PBXBuildFile; fileRef = FE4DF7C4FDF9B382D65C3565EAA891C4 /* Leanplum-iOS-SDK-Leanplum-iOS-SDK */; };
+		150FF3A9D34C3AC2FACC2D4962D7A738 /* LPWebInterstitialMessageTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 61662AC9E64F631CF5543BF6EE77082E /* LPWebInterstitialMessageTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		159E2A717F8378867E3CB0D7C9B9AD72 /* Leanplum_Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 32739275FF24AC79F8FE72B6CB570156 /* Leanplum_Reachability.m */; };
+		16674DFB6A5DCDCCB1EA5A5294A75281 /* LPRequestBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC588349891104D390D96CA4BC2563D /* LPRequestBatch.m */; };
+		16B1835397A562D0A3250347D8341770 /* WebInterstitial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B909BEF9BAA370A379345B9A95C6C00 /* WebInterstitial.storyboard */; };
+		1737EB130361BF661ED5589D249498A5 /* Leanplum_Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 798553A78D5A60F3F25AFF277747726E /* Leanplum_Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		177CDCCCB8C96CE7006BD6E5ECBB6911 /* LPPushNotificationsHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = CFD653E0888755994E0E2DFA03D0C1EC /* LPPushNotificationsHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18EB96B31D5C405174B6427E7FED531F /* LPLocalNotificationsHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C6A197D3DBCB1FC1F33993A8A0233F8 /* LPLocalNotificationsHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0368DE66DF229D436631BA40D15584 /* LPPushNotificationsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FFC3B64261613DB8D7CB984822178266 /* LPPushNotificationsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B8A03D7B00801A9B7CD2A81ED45CEE9 /* LPIconChangeMessageTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = A62B3AC921B998E1DD94CFC1184BCDB1 /* LPIconChangeMessageTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EF5343D6E548B04B2E859CA227F0A48 /* LPOpenUrlMessageTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4614B7B94BF1592759B6C1E48FF40B /* LPOpenUrlMessageTemplate.m */; };
+		1F660C49B36A635EC6B6F5074430A9EE /* LPAlertMessageTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 302A9D98E75A8CEB357D3CDE50F7B39E /* LPAlertMessageTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FFF959591B68EAD0F2159CA224AF99C /* LPKeychainWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5BEA97046CB4C4955181758124700F /* LPKeychainWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21199C61AAB64160E1D3129C6D942DE6 /* LPActionArg.h in Headers */ = {isa = PBXBuildFile; fileRef = FE0B2E5A7563BC1C6E64B0A3249C8155 /* LPActionArg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22B38081554103F212BB664FE74AED52 /* LPVar-Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A7A89528C22F9F21721833344940427E /* LPVar-Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2362508F732163FB9C124E5D089158A5 /* LPAlertMessageTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3028D5C88ADB7E41E46E72CFBFCA1FD /* LPAlertMessageTemplate.m */; };
+		2422490DEB33FF3EC8FB320968366349 /* Leanplum-iOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB960ABC7A5DC6FE20CBC5A2CB76E873 /* Leanplum-iOS-SDK-dummy.m */; };
+		2679CC3FCE909E207E70979A98AD3125 /* LeanplumCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = C97474727F09E9B3E0721958E8FA893A /* LeanplumCompatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27B8EF3667F3DAB899164AB39F3D2FC5 /* FileMD5Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = A52156EAAAA45C8883FE786FFCA263F3 /* FileMD5Hash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A77EB0D76574AB5B1B94D35F4BA8E34 /* NSString+MD5Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C44529C81709AFA8DE773ED299AD697 /* NSString+MD5Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ADBAC7B8A4694D5B20E420157643ABE /* LPCountAggregator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FDEA8EB0FF521195F6CC4F98AFF6E /* LPCountAggregator.m */; };
+		2C002B7EA49148313F95D215BDE0CE5A /* LPNotificationsConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FEDFEDC44E0DC36E566338DB1510E3 /* LPNotificationsConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C40CFE174570D81252C7A31BDA3D639 /* LPJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 913BF38C027546F8D00D74B8DDFE008B /* LPJSON.m */; };
+		2D5465D14D60BC02A51AB6156B4AB0CF /* LPInterstitialViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C404D47FFF486E2CDC1C4ED26A9CC98 /* LPInterstitialViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		302AEB489B7962C3AF70FD4A68CE1B7F /* LPNotificationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F72E9B2358438EF47C41F40B254777BD /* LPNotificationsManager.m */; };
+		313D24E0777EA0C0F667EAACC4392A55 /* LPRequestFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 70C1F020CE435722D0FB81B72F61A856 /* LPRequestFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31B3CA3245CBDA2C40639B19F77458CC /* LPRevenueManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F2BB2AAB72FD0B48A89E47C15E61D359 /* LPRevenueManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32B8C3B4D7DF60EE5E91917BDF59B854 /* LPConfirmMessageTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 86F96787FFF7D07794FDD2B23A801C62 /* LPConfirmMessageTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		336636D8D65793E17605F4EBEEFAB95C /* LPActionContext-Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9C432E50F1E2D0DF46425B3681E885 /* LPActionContext-Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36B2C0FF5CC78C50B1BAB94A754A4899 /* LPInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A204D93D5923D6CF592881EF64106148 /* LPInterstitialViewController.m */; };
+		394F393B85A2784C69FAC3CC00FC57E4 /* LPWebInterstitialMessageTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD13F4F79775D2D60DFC5B959FE021C4 /* LPWebInterstitialMessageTemplate.m */; };
+		3C8FE594CC82CA56A5D2C1B0252FD30A /* LPPushNotificationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA05381E2739286F6118C90459076D63 /* LPPushNotificationsManager.m */; };
+		434644C0B54A8DFA58C6862FACA38AAB /* LPConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = D7EDC679608EA538AA81D073E031AF2C /* LPConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43FA1392C8832BEB2BCD0E60A6FD38FB /* Pods-leanplumios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD2F56130E1DAE9F4A7B65C779131FB /* Pods-leanplumios-dummy.m */; };
+		4507B858D846AC22223B3A4997ACAAB3 /* LPRequestUUIDHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6637C8852946EBEE2AC2D1B548B1E12C /* LPRequestUUIDHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4529DDEE1C68673F580035C8E9E1EB8C /* LPRegisterDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = F7510DE2AC6146E3A08CC73165582230 /* LPRegisterDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45906D152C57BC196443F404EB7B28B8 /* LPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F4C8D6D8E89450B921124C8AF08625 /* LPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EDC78DD0E4360FB1FCC67CDBF007B7 /* LPRegisterForPushMessageTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B16AB715F5F9C1AD7D7EB8512DD2F61 /* LPRegisterForPushMessageTemplate.m */; };
+		4901680ED92601E5706FFE84178D3C83 /* LPFileTransferManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1121800DCABBF21BF0AF02C350D54BCB /* LPFileTransferManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D6537103CFA198A81F21485746157C9 /* LPNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CF1DB007125B2021F079D74157BEEE /* LPNetworkOperation.m */; };
+		4E78F440E9F7DA5D5A208783F9B13372 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA8C35B2DF32EAA4D18695E0ADF295C /* CFNetwork.framework */; };
+		4F53CB041E494F98FE3F738D9750DC82 /* Leanplum_WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A6289DC7E961D3BCD9325EF6F72B7CED /* Leanplum_WebSocket.m */; };
+		51AE99ED2249F87104E240A3839A67D6 /* LPRequestBatch.h in Headers */ = {isa = PBXBuildFile; fileRef = B97EE420E6A9DFC4DD9C1D8218212A3F /* LPRequestBatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56FA31D19BC3930BC55FE762836CACA3 /* LPMessageTemplateUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1FC866A6141177D531BDA51D2E74DD /* LPMessageTemplateUtilities.m */; };
+		57E0DA5A3D06B1FC32D9CFE8B952EA34 /* LPPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F720F77AE5915F2EFA56078A67D54546 /* LPPopupViewController.m */; };
+		5998803382AFE698158DF4DA84B96797 /* LPJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DA7D278DBDD9943678D24A51F3C661A /* LPJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B13842E6E8282040E2DB4A616CBE5B9 /* LPNetworkProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD47EDF6647F1A558E5B58ED6782A7A /* LPNetworkProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F72FBD0D5AF08F5D2B8EBB9FF30BF09 /* LPWebInterstitialViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD63861978448B17E44D8D5816B2134 /* LPWebInterstitialViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		623C4C0CBA01EACFF20442ED10DB3342 /* NSTimer+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 27DBFD124B90F2651CF6D431413C9967 /* NSTimer+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DA3DBFF32862B161227D5CDC7F35047 /* Leanplum.h in Headers */ = {isa = PBXBuildFile; fileRef = F4DE08AB3A1FFC6EB1E85DEF7A61764F /* Leanplum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70ADB02555766995945154877F83C55D /* LPSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 995B3A8DCD1FD6F7A389CBB9CD2750B9 /* LPSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		710EC8D725CEB5D4743188A4240817BF /* LPMessageTemplates.m in Sources */ = {isa = PBXBuildFile; fileRef = F8422ACA9714D0003D8DB73AE2AF4628 /* LPMessageTemplates.m */; };
+		711F2678E0A57A634341E1978967ECF9 /* LPConfirmMessageTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA730BE5A2A52865CACC991F9346ABAB /* LPConfirmMessageTemplate.m */; };
+		71C34E2480D8A0CE7DF2D15E1F61DB9C /* LPAppIconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E378D0678BB33484D7AA5F3B6F206B /* LPAppIconManager.m */; };
+		72368CBA5D05583AF394C8F0304A1E92 /* LPAPIConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AA118461664E191B865637E464E102 /* LPAPIConfig.m */; };
+		725536A8C2481849C1EF8A442B943941 /* LPDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E36745B28C5DF2E333A08882E2C8AC /* LPDatabase.m */; };
+		72AFBE9063A818F2D04B1D938411A70B /* LPDeferMessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B3E42F5C930F026973604B6C12FB1C /* LPDeferMessageManager.m */; };
+		72C4F1212800D3FA8919AEC83FDF0D21 /* LPFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D1525A1E82D9E3FF51EB9F0B7EAAFA /* LPFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73EA34796C2E618EE8BB3A4CCE596F95 /* LPPushAskToAskMessageTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = A6825B6A1AE0EB1D4027ECA249317CF1 /* LPPushAskToAskMessageTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7551A34E89778EA2C8144BC41ECE88C3 /* LPHitView.h in Headers */ = {isa = PBXBuildFile; fileRef = DB3DC22F7FF934AB447EC5804E168AF2 /* LPHitView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		796C7630502A6E7FAEDBA46BFDBAA62A /* LPUIAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = F448E17C1B8C727915F66A901FA2A7A7 /* LPUIAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BFA2D1D9DA4D3DB8CE23CFB8F0D553C /* LPNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C5BD5C7E723E4032ABA12A13CB98C9B4 /* LPNetworkOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D01D34CC05E2D41A282C757C7C2FC80 /* LPFeatureFlagManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7872026C2CD0FD2D61DC40CF01B37992 /* LPFeatureFlagManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D9130BC60924BBC8C77BACDBA5C8C1A /* LPActionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D8BE93DD80E6064C16E0049BBAB577 /* LPActionContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DB6E8676AB59156044173FBE145AC0C /* LPLocalNotificationsHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 917CF4F0D9FAFCEA62480B7A94211FA1 /* LPLocalNotificationsHandler.m */; };
+		7DD0ECBF41989BE6570D6AC8487084D1 /* LPActionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C20BBEB0D871FB3ED9960CF347F8D7CF /* LPActionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F9872CE32E0E6879A2408AA1BC28273 /* LPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C2E10FA09CE44F7EA7B2FD1F6FD463 /* LPUtils.m */; };
+		8044DF105609DB2EDBBB8E3F5733516E /* LPRequestSender.m in Sources */ = {isa = PBXBuildFile; fileRef = C18C5BF77CFBC0628A947CB4AF7B66A5 /* LPRequestSender.m */; };
+		861ABA19FE27BE11FBFDEE5E46FB82DD /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0A82C1B8526DA99D2088E3BA3EC9A /* UIDevice+IdentifierAddition.m */; };
+		878FCA962E8F5D69440A62E1624882A0 /* FileMD5Hash.c in Sources */ = {isa = PBXBuildFile; fileRef = F8605CB3E45C02F0F5BAFCB856A6540A /* FileMD5Hash.c */; };
+		883CF1AB215AE2A4430F3A7EE3C1EE92 /* LPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CEADAECAF8BB722D8CB2E8BC769DF7CF /* LPConstants.m */; };
+		893BA0021E55EB90B6DCC9A7A3136C0D /* LPVarCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9A578813941B095204A38EE9FA5912 /* LPVarCache.m */; };
+		89DE74A570CDBF843EB04670EAF32379 /* LPInterstitialMessageTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = C508C1E74D0DD3B5A5328BC61FF0EFF8 /* LPInterstitialMessageTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C110C0EB24AA6247077BF81EEBA519F /* LPUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB2E02C1501633157E5A1C9E502BC66 /* LPUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C8173A5DA8D7AEF8A951F9822E3AED6 /* LPAppIconManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 80CE114BB332CDF73AB1F70CA1754F4F /* LPAppIconManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CF23EB2E61E574950F30D9EC64F3695 /* LPAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1360F51C158C0368629ACEC67057CD /* LPAES.m */; };
+		8E5DA93666EC7500FBF24DBD3AAF4A20 /* LPSecuredVars.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1340E07D909D72033CF989E149F56F /* LPSecuredVars.m */; };
+		900E3A4B2F1BBAB4DA7EEE8A82F7C702 /* LPEnumConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = AC306EF08B84E7FF487615D37E64DF9E /* LPEnumConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90E4626FD20ECC8E8C95DA9869387DCB /* Leanplum_SocketIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ED43AFE38B9B0697BC792B94F5C7E2D /* Leanplum_SocketIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91A4E43F26C7B35F712DFB9E5569C25A /* LPAppRatingMessageTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F5DE1CCF616E47A56A708F3DDDB64F5 /* LPAppRatingMessageTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91A65D596CBCD0D3BE5E2F6112DD870C /* LPCountAggregator.h in Headers */ = {isa = PBXBuildFile; fileRef = 54015E6E2F0F165104D056EF41992812 /* LPCountAggregator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9462AF0CBF61C69DB3C346CE1DB443E0 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67FF161F30A14B2D2401D523007106 /* NSTimer+Blocks.m */; };
+		96236A79A5A5F1E59635D4662B273055 /* LPEnumConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BD99CC9D7321F970030BC7A24D672D5B /* LPEnumConstants.m */; };
+		977121F910067E695D1C074C8F98CF36 /* Interstitial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF528DA74966F237D705E75180AE830A /* Interstitial.storyboard */; };
+		99534653B9E5D89344BBBAEA0B534177 /* LPCenterPopupMessageTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 317BC9DB87048DA7AF54C040061094E8 /* LPCenterPopupMessageTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99F2BCCABF3E527C9A923B0E8345CAB3 /* LPMessageTemplateProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D998A4F5C6536BF688EEE54A546D3421 /* LPMessageTemplateProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BA119EAE999ECCC4E3526A60E534DD2 /* LPAppRatingMessageTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 827238D11E447B5584150EACAF1577CF /* LPAppRatingMessageTemplate.m */; };
+		9BBCCEE127D3CB74C488F9951258D63F /* Pods-leanplumios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C720B1C7F6AFEA546FB32E22C4A8F71C /* Pods-leanplumios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BE22831F690A05875C961E4CA3279F3 /* LPRequestSenderTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B24710FBC33FEB89F29831F0536393 /* LPRequestSenderTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C2C23B90C0FF6FB515963F789557210 /* LPFeatureFlags.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3D25AD48E3ABCD253717BD38FBF639 /* LPFeatureFlags.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EF7F2219EDB9C6DCDD6FF0DC17DDEA4 /* LPOpenUrlMessageTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BF332F059AA3DBEED62CAC3594EE3726 /* LPOpenUrlMessageTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0CA400B547E9F57780CCAC388C49FDB /* LPEventDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 91ECBE3059FF54E41396B1E05DF7A401 /* LPEventDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1445FADD5437FF7C31529341A1C5906 /* LPEventCallbackManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFF4DC41B7BB3F69524A909C877A188 /* LPEventCallbackManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A153B6F8A8B75BC3062E985AD6909EB0 /* LPLocalNotificationsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7934D99AEA6481E1C5CF434F7EC198 /* LPLocalNotificationsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1ED811638FEF338CE8022BC9391808B /* LPLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5C154E4152AFFB4588B6EBA50D668D /* LPLogManager.m */; };
+		A2B7E5818ACAB2590969D75172D13E9C /* LPExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D43576CA68CBE4C2BBD6A39BDEC0F7AC /* LPExceptionHandler.m */; };
+		A5E22DF63EE4C687CFC2237989187747 /* LPInbox.h in Headers */ = {isa = PBXBuildFile; fileRef = DA1B52F043ADBB464339425CE6433FA7 /* LPInbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7D2A2285C0A23ABF1B2B7BA74243100 /* LPNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D29FDD4FC1BD0B2126FA88ACB7F2640F /* LPNetworkEngine.m */; };
+		A9D84C4CC515C237D0E60C8414123DA6 /* LPAPIConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FD7CAC10A6EE517C7B4C5121129A0B8 /* LPAPIConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9FBAA57C07953EBB39335FB660C3004 /* LPMessageArchiveData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB645A9E80F21CCF75270695C9575E /* LPMessageArchiveData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB336F7A520916ED0F70033130A7BF00 /* LPInterstitialMessageTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9EE7431C8FA5B644F885136331907D /* LPInterstitialMessageTemplate.m */; };
+		ABC9D61EE043E3A2AAC771E7E7FBB6A3 /* LeanplumCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = D656B56EBE2249A81E94E9EC6B9292B1 /* LeanplumCompatibility.m */; };
+		AE51F2DDBA334355770AD102A8FE1DBC /* LPNetworkConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD60B6682993C09964AD1C2F98BB378 /* LPNetworkConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFE525E09E0071559E286295E50167B9 /* LPActionArg.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A3315F2250628E5DDF705BFA01FB8 /* LPActionArg.m */; };
+		B1FE14F60D250C36C60EA2CE7C0D4249 /* LPNetworkEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = BD06063F2BF2DB39D4FCE54914A12E31 /* LPNetworkEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B209978C094E3B39F354D8CE392EAA3E /* LPEventDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FDAF1823906D51D9C4E4C19DA3762 /* LPEventDataManager.m */; };
+		B32449A9268B8210AA6C9DDDB67365E7 /* LPActionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 264B503FC2C18A2D64A5AB59DE346724 /* LPActionContext.m */; };
+		B41D0EC3F62F723D0D5958F663E1602A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7588407EA8301D96B74763E1E64AE0C /* UIKit.framework */; };
+		B4B2B326B415178D802EF5E6486915BA /* LPSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E8C6152E0CC39FB6D05EAA0D90E295 /* LPSwizzle.m */; };
+		B5E84B0E4A2A0E625F1A0123AAF95C44 /* LPNotificationsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D78A69BD8E1E5FE3B8B974B77A6D35 /* LPNotificationsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B707F46F0BE81B38C5DFC0E2739DD083 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32EF03652315294BA65D483F3DEB70D /* Foundation.framework */; };
+		B816E5E2A56FD39948D9EC422A3FF979 /* LeanplumSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 331F5EF636169F0CACAAEE727421AAE2 /* LeanplumSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9F4E35BFFFACDCA2B203498FD36D64D /* LPPushAskToAskMessageTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A64CB94B4AA16A0760402F3294F5322 /* LPPushAskToAskMessageTemplate.m */; };
+		BADAB686232C0D8FF9E81A907DDE1FE8 /* LPAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CCEA9108812AA03F3E72A76B69F0463 /* LPAES.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB34CA197FED55DE065FD8E2F0BAD47D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBF97BBBC416557FDB80796CC369317 /* SystemConfiguration.framework */; };
+		BB7A8E71A9C887358B7F82183BB0EC30 /* LPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D02073982C5AF077317959921442584F /* LPResponse.m */; };
+		BB7D6C441754C2DD25A6AAEF0642877A /* LPInternalState.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF73DD15037D9A8B6ECC9F91178D75B /* LPInternalState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBC15FC4BBB379CAD105B10638915759 /* LPRevenueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71900CE50145F2983FEDFD665579514F /* LPRevenueManager.m */; };
+		C0AE4E80DFCF9B14D9D19E9C17B38DAA /* LeanplumSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C636B286AF58BF24C682F26E9CF08920 /* LeanplumSocket.m */; };
+		C38965BBE86C072EC5AF05C4148AD273 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BC963284794168E4F4033DA91F620B /* Security.framework */; };
+		C394B0BCCAD84D450E6D73A4B2827F2E /* LPKeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B93ADF8C9FAB0534DE9D64DFC148C32 /* LPKeychainWrapper.m */; };
+		C4A53A3243323D07CD350F867D445E10 /* LPEventCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 52453F993AD1FD05451A5C438F931F21 /* LPEventCallback.m */; };
+		C4EFEEB2BAFE76EF953846847AA0C80E /* LPMessageTemplates.h in Headers */ = {isa = PBXBuildFile; fileRef = AF84ED6E097628CE33654A14853FEDAF /* LPMessageTemplates.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C564CC01EC561F02E9D293FA6ADCFA28 /* LPMessageArchiveData.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE3391D72A27CF01E249FE1E53657EE /* LPMessageArchiveData.m */; };
+		C5BE5D0FDE03CC1237FD8A126A882657 /* LPExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF282BF28881749A074408D4CCB4A37 /* LPExceptionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8B823D6F9841D73DF84E879A534AB24 /* LPCenterPopupMessageTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = C45E8E26D1A4CFF0EDD632964A67C5B6 /* LPCenterPopupMessageTemplate.m */; };
+		CA1C88D228AE65C6CB9ABEF57749A38F /* LPInternalState.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DBCCF6DEB291BF1CBDB89837E7004A /* LPInternalState.m */; };
+		CB240052AB76830DC6131AE41F12AFB8 /* LPNetworkFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B5E7747CE76DCC3965673E8F96104DB /* LPNetworkFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBB57F679E3F079D0EC4A7BD72309395 /* LPFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F06D8113F774601C79B1361A68E8BA9D /* LPFileManager.m */; };
+		CC471ED9AB873DCC6B23A4C6E0FA26B4 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F7C7DDCF42B18A260A98D6BBFF5F6E /* NSString+MD5Addition.m */; };
+		CD4A369B08958B820AB72342981694F9 /* Leanplum_WebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = BCB1F6427FDBA619D0CF291D61DEF3BC /* Leanplum_WebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0DCA4C9F68CCB7D2704F35463BE999D /* LPSecuredVars.h in Headers */ = {isa = PBXBuildFile; fileRef = B359722A2483944E5D641B3604BD3C5E /* LPSecuredVars.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D105FF85990477860270C8AB326AAA0B /* LPVar.m in Sources */ = {isa = PBXBuildFile; fileRef = 737AB98565EE4B6CCB4C5056BE3C2BF9 /* LPVar.m */; };
+		D1B0AA344CAC610EF5BC2B761AA9A2BC /* LPRequestUUIDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C002FCCB487E7D72209874D7BB3E0B /* LPRequestUUIDHelper.m */; };
+		D6D0D330EBC69EBB59CF9CDA92EEB8EF /* LPIconChangeMessageTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E754FD1FFDFD2E2C4C34A18CFF7478 /* LPIconChangeMessageTemplate.m */; };
+		D7DFA937477B16FBD4FA25E306543D86 /* LPOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC2A08C658A29EB02BFB2EC6447A35A /* LPOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7F376CCA2F036217E7C999DB0CB58FF /* LPRichInterstitialMessageTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 00FF483ED847323A07786C3CD7133EFE /* LPRichInterstitialMessageTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D89665C1954E9A122AB61DA39ADA160B /* LPActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2581E069C6EB70ECA255CD32B621F257 /* LPActionManager.m */; };
+		D96ADECC8B075E9C80D500D6CFDB54CA /* LPRequestBatchFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B55EFFA3FF50ABDEF5FB405DC7E9C812 /* LPRequestBatchFactory.m */; };
+		DA6B7F672D4CABFB5EC9FF44EE54700D /* Leanplum-iOS-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E3149288D4591FA5A4DD667CDEEB68 /* Leanplum-iOS-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC1D68FC5A0505D95BA3926614784259 /* Leanplum_SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8731EC5E0F50C72D3B071C1AFEE3429C /* Leanplum_SocketIO.m */; };
+		DE0F54015F5E2CD0BD12A20ADD6CC01A /* LeanplumInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5D75E67FF883B7A85D5F7FC3CC4559 /* LeanplumInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2077FDCFCFEC654EE101DE46EC825F3 /* LPContextualValues.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D894356576A9F32546F062982328BC1 /* LPContextualValues.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E31E82FD68FD553A25850FEE90E5B404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462C6595D55891022AD6B65FF118441B /* Assets.xcassets */; };
+		E41FD0B61D7E4F2E2D50ADF7A62F8FB4 /* LPMessageTemplateConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 8785A9C8B96DE10CA51FC72433A47B1A /* LPMessageTemplateConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E67CBC1C8F5BD772B7992B492A57ABF6 /* LPRequestSenderTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8D8E2B86ABA74AE55FC4F9280B230C /* LPRequestSenderTimer.m */; };
+		E7DC4A9CD42D678472BB74953F399729 /* LPEventCallbackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 248D44C4B7048E5649117A09FD00D75E /* LPEventCallbackManager.m */; };
+		EBBE221A25F1E1B7C1FEDC98EE0E9249 /* LPRegisterDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0049F6B5154A5A5E88C8EBA0BBB9B635 /* LPRegisterDevice.m */; };
+		ECF6BDAB8D2BEDE2A85BF6F7B066539A /* LPDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E5F7DC20A4FEA69660F39C95C033687 /* LPDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED060DF01BCBDE41D69B70CCC102872F /* LPUIAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC8FD080BEF44835B141BB884B2BC4 /* LPUIAlert.m */; };
+		EE1FC2F962F1626A34DC18B522415134 /* LPPushMessageTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C6CF5427BDF576E521E5E7A1DEB6C06 /* LPPushMessageTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE273AFF835CF56FF176C3AD2F83797A /* UIDevice+IdentifierAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = FF4CE142B76B8120A6264E308DA7BD15 /* UIDevice+IdentifierAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF4ADC4009901576AC6EA80ED139E2C8 /* LPLogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1254F57F7F9FD8A4BD258155E81B7EDB /* LPLogManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFC4F64225976B2A97573A10FF39C730 /* LPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DDC5FD532E2195AB971015A878E40 /* LPRequest.m */; };
+		F0E03E9B0BA23AFEFB0F543DED4FBB21 /* LPVarCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B2B995F75B606912CA15D78A79D40947 /* LPVarCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F10B730AAD453D03F1717BFFB981AC8D /* Leanplum_AsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 429E652FD85940D008AC97C4ADDC1EAE /* Leanplum_AsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2B9792E6F3A03043E7AFF183AFC6506 /* LPMessageTemplateUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 81B39C655E8AE88FC45457C2784E5414 /* LPMessageTemplateUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2D2E421F71B31918C95BBBD369807A2 /* LPFeatureFlagManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBA87AF87F0212E00114DB10D078CBF /* LPFeatureFlagManager.m */; };
+		F3FB21CAA20A9E4624ECD3868A46C68A /* LPRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6E1BF7710B22957D73A3586C4F0487 /* LPRequestFactory.m */; };
+		F454EE4FE1278C5BE050EEAE417FD91B /* LPEventCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 670CA40CED61E9ED1B7BDA80B92C8D61 /* LPEventCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4F5A4F9CE2A285E13BFA34750591870 /* LPHitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4926AC5CE069F28A2FDFEDCFE4A1E790 /* LPHitView.m */; };
+		F78AEA03DC39D04D041C6EE4E6BDC5B1 /* LPVar.h in Headers */ = {isa = PBXBuildFile; fileRef = 94601E3F363F850A1700B36A8D84B40C /* LPVar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DD9D075ADDEEE486D824A3D38AEF90 /* Leanplum_AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0FCD8ABDD2CBD353B9EFAC8E3D3ED3 /* Leanplum_AsyncSocket.m */; };
+		F9AF6B7E9A575E9D36BAE50292C5EB54 /* LPInbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7B94DA28FBFBABA8F3904768B36335 /* LPInbox.m */; };
+		FAC75CDEE9441B647570041DA9CB751E /* LPLocalNotificationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A7B49F954CA1DBD0CECC5F41F1EA21 /* LPLocalNotificationsManager.m */; };
+		FC14A06DBFFCC13C8423AEB5E160BF33 /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05DE1B516E4F9AC9F969C5BF7EEA59B /* Popup.storyboard */; };
+		FFE98A51D025AC329472AFC54F861FFD /* LPFileTransferManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7E9635407CC58EC9EC86B58BB885F /* LPFileTransferManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64F66D130CBAEA04CCF0AF3B4D4A4C4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C170F0F318D74025FF3DF0E260BAEA4;
+			remoteInfo = "Leanplum-iOS-SDK-Leanplum-iOS-SDK";
+		};
+		C783B9B06C9D378D54074DDC179AC136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AFA897182D086184589EAA155942D5B;
+			remoteInfo = "Leanplum-iOS-SDK";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0049F6B5154A5A5E88C8EBA0BBB9B635 /* LPRegisterDevice.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPRegisterDevice.m; path = "Leanplum-SDK/Classes/Managers/LPRegisterDevice.m"; sourceTree = "<group>"; };
+		00FF483ED847323A07786C3CD7133EFE /* LPRichInterstitialMessageTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPRichInterstitialMessageTemplate.h; path = "Leanplum-SDK/Classes/MessageTemplates/LPRichInterstitialMessageTemplate.h"; sourceTree = "<group>"; };
+		02AA118461664E191B865637E464E102 /* LPAPIConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPAPIConfig.m; path = "Leanplum-SDK/Classes/Managers/Networking/LPAPIConfig.m"; sourceTree = "<group>"; };
+		02B3F70B68921C56B33DA87A37805ADE /* LPRegisterForPushMessageTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPRegisterForPushMessageTemplate.h; path = "Leanplum-SDK/Classes/MessageTemplates/LPRegisterForPushMessageTemplate.h"; sourceTree = "<group>"; };
+		041292A6B678EBD88569EBEDA47348BC /* LPRequestSender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPRequestSender.h; path = "Leanplum-SDK/Classes/Managers/Networking/LPRequestSender.h"; sourceTree = "<group>"; };
+		0B93ADF8C9FAB0534DE9D64DFC148C32 /* LPKeychainWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPKeychainWrapper.m; path = "Leanplum-SDK/Classes/Utilities/LPKeychainWrapper.m"; sourceTree = "<group>"; };
+		0C6CF5427BDF576E521E5E7A1DEB6C06 /* LPPushMessageTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPPushMessageTemplate.h; path = "Leanplum-SDK/Classes/MessageTemplates/LPPushMessageTemplate.h"; sourceTree = "<group>"; };
+		0CCEA9108812AA03F3E72A76B69F0463 /* LPAES.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPAES.h; path = "Leanplum-SDK/Classes/Utilities/Encryption/LPAES.h"; sourceTree = "<group>"; };
+		0E2DDC5FD532E2195AB971015A878E40 /* LPRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPRequest.m; path = "Leanplum-SDK/Classes/Managers/Networking/LPRequest.m"; sourceTree = "<group>"; };
+		0EA8C35B2DF32EAA4D18695E0ADF295C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		0EB0A82C1B8526DA99D2088E3BA3EC9A /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+IdentifierAddition.m"; path = "Leanplum-SDK/Classes/Utilities/Vendor/UniqueIdentifier/UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
+		1121800DCABBF21BF0AF02C350D54BCB /* LPFileTransferManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPFileTransferManager.h; path = "Leanplum-SDK/Classes/Managers/Networking/LPFileTransferManager.h"; sourceTree = "<group>"; };
+		1224B6107B53C01494E50F52971EEB2B /* Leanplum.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Leanplum.m; path = "Leanplum-SDK/Classes/Internal/Leanplum.m"; sourceTree = "<group>"; };
+		1254F57F7F9FD8A4BD258155E81B7EDB /* LPLogManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPLogManager.h; path = "Leanplum-SDK/Classes/Managers/LPLogManager.h"; sourceTree = "<group>"; };
+		12DBCCF6DEB291BF1CBDB89837E7004A /* LPInternalState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPInternalState.m; path = "Leanplum-SDK/Classes/Internal/LPInternalState.m"; sourceTree = "<group>"; };
+		13C2E10FA09CE44F7EA7B2FD1F6FD463 /* LPUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPUtils.m; path = "Leanplum-SDK/Classes/Utilities/LPUtils.m"; sourceTree = "<group>"; };
+		15E60E950AEFF970CCD24E2FEA946CAC /* Leanplum-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Leanplum-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		15FEDFEDC44E0DC36E566338DB1510E3 /* LPNotificationsConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPNotificationsConstants.h; path = "Leanplum-SDK/Classes/Notifications/LPNotificationsConstants.h"; sourceTree = "<group>"; };
+		16C8F25D72328109BF8D236DED24C799 /* LPResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPResponse.h; path = "Leanplum-SDK/Classes/Managers/Networking/LPResponse.h"; sourceTree = "<group>"; };
+		1A7E6C5AB2CC39B63BC6D54DFF7D1505 /* Pods-leanplumios */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-leanplumios"; path = Pods_leanplumios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD60B6682993C09964AD1C2F98BB378 /* LPNetworkConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPNetworkConstants.h; path = "Leanplum-SDK/Classes/Managers/Networking/LPNetworkConstants.h"; sourceTree = "<group>"; };
+		1ED43AFE38B9B0697BC792B94F5C7E2D /* Leanplum_SocketIO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Leanplum_SocketIO.h; path = "Leanplum-SDK/Classes/Utilities/Vendor/SocketIO/Leanplum_SocketIO.h"; sourceTree = "<group>"; };
+		248D44C4B7048E5649117A09FD00D75E /* LPEventCallbackManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPEventCallbackManager.m; path = "Leanplum-SDK/Classes/Features/Events/LPEventCallbackManager.m"; sourceTree = "<group>"; };
+		24E3149288D4591FA5A4DD667CDEEB68 /* Leanplum-iOS-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Leanplum-iOS-SDK-umbrella.h"; sourceTree = "<group>"; };
+		2581E069C6EB70ECA255CD32B621F257 /* LPActionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPActionManager.m; path = "Leanplum-SDK/Classes/Features/Actions/LPActionManager.m"; sourceTree = "<group>"; };
+		25BB78787F3CED9B89D4A0448A6E2E56 /* LPNetworkFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPNetworkFactory.m; path = "Leanplum-SDK/Classes/Managers/Networking/LPNetworkFactory.m"; sourceTree = "<group>"; };
+		264B503FC2C18A2D64A5AB59DE346724 /* LPActionContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPActionContext.m; path = "Leanplum-SDK/Classes/Features/Actions/LPActionContext.m"; sourceTree = "<group>"; };
+		27DBFD124B90F2651CF6D431413C9967 /* NSTimer+Blocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+Blocks.h"; path = "Leanplum-SDK/Classes/Utilities/Vendor/NSTimer-Blocks/NSTimer+Blocks.h"; sourceTree = "<group>"; };
+		2B1340E07D909D72033CF989E149F56F /* LPSecuredVars.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPSecuredVars.m; path = "Leanplum-SDK/Classes/Features/Variables/LPSecuredVars.m"; sourceTree = "<group>"; };
+		2B5E7747CE76DCC3965673E8F96104DB /* LPNetworkFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPNetworkFactory.h; path = "Leanplum-SDK/Classes/Managers/Networking/LPNetworkFactory.h"; sourceTree = "<group>"; };
+		2CF73DD15037D9A8B6ECC9F91178D75B /* LPInternalState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPInternalState.h; path = "Leanplum-SDK/Classes/Internal/LPInternalState.h"; sourceTree = "<group>"; };
+		2DD47EDF6647F1A558E5B58ED6782A7A /* LPNetworkProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPNetworkProtocol.h; path = "Leanplum-SDK/Classes/Managers/Networking/LPNetworkProtocol.h"; sourceTree = "<group>"; };
+		2E0FDEA8EB0FF521195F6CC4F98AFF6E /* LPCountAggregator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPCountAggregator.m; path = "Leanplum-SDK/Classes/Managers/LPCountAggregator.m"; sourceTree = "<group>"; };
+		2F5A3315F2250628E5DDF705BFA01FB8 /* LPActionArg.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPActionArg.m; path = "Leanplum-SDK/Classes/Features/Actions/LPActionArg.m"; sourceTree = "<group>"; };
+		302A9D98E75A8CEB357D3CDE50F7B39E /* LPAlertMessageTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPAlertMessageTemplate.h; path = "Leanplum-SDK/Classes/MessageTemplates/LPAlertMessageTemplate.h"; sourceTree = "<group>"; };
+		317BC9DB87048DA7AF54C040061094E8 /* LPCenterPopupMessageTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPCenterPopupMessageTemplate.h; path = "Leanplum-SDK/Classes/MessageTemplates/LPCenterPopupMessageTemplate.h"; sourceTree = "<group>"; };
+		31D6780904EA16B471745D9D2AD7B970 /* Leanplum-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Leanplum-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
+		32739275FF24AC79F8FE72B6CB570156 /* Leanplum_Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Leanplum_Reachability.m; path = "Leanplum-SDK/Classes/Utilities/Vendor/Reachability/Leanplum_Reachability.m"; sourceTree = "<group>"; };
+		331F5EF636169F0CACAAEE727421AAE2 /* LeanplumSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LeanplumSocket.h; path = "Leanplum-SDK/Classes/Managers/Networking/LeanplumSocket.h"; sourceTree = "<group>"; };
+		35CF1DB007125B2021F079D74157BEEE /* LPNetworkOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPNetworkOperation.m; path = "Leanplum-SDK/Classes/Managers/Networking/LPNetworkOperation.m"; sourceTree = "<group>"; };
+		35E8C6152E0CC39FB6D05EAA0D90E295 /* LPSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPSwizzle.m; path = "Leanplum-SDK/Classes/Utilities/LPSwizzle.m"; sourceTree = "<group>"; };
+		36D1525A1E82D9E3FF51EB9F0B7EAAFA /* LPFileManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPFileManager.h; path = "Leanplum-SDK/Classes/Managers/LPFileManager.h"; sourceTree = "<group>"; };
+		3B16AB715F5F9C1AD7D7EB8512DD2F61 /* LPRegisterForPushMessageTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPRegisterForPushMessageTemplate.m; path = "Leanplum-SDK/Classes/MessageTemplates/LPRegisterForPushMessageTemplate.m"; sourceTree = "<group>"; };
+		3B5BEA97046CB4C4955181758124700F /* LPKeychainWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPKeychainWrapper.h; path = "Leanplum-SDK/Classes/Utilities/LPKeychainWrapper.h"; sourceTree = "<group>"; };
+		3C0D3A6BEAAD94606A05097B819D7FB9 /* LPPopupViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPPopupViewController.h; path = "Leanplum-SDK/Classes/MessageTemplates/ViewControllers/LPPopupViewController.h"; sourceTree = "<group>"; };
+		3E5F7DC20A4FEA69660F39C95C033687 /* LPDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDatabase.h; path = "Leanplum-SDK/Classes/Utilities/LPDatabase.h"; sourceTree = "<group>"; };
+		3EF7E9635407CC58EC9EC86B58BB885F /* LPFileTransferManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPFileTransferManager.m; path = "Leanplum-SDK/Classes/Managers/Networking/LPFileTransferManager.m"; sourceTree = "<group>"; };
+		429E652FD85940D008AC97C4ADDC1EAE /* Leanplum_AsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Leanplum_AsyncSocket.h; path = "Leanplum-SDK/Classes/Utilities/Vendor/WebSocket/AsyncSocket/Leanplum_AsyncSocket.h"; sourceTree = "<group>"; };
+		44BA26B225C92A5BE27338065BB9F8CF /* LPPushMessageTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPPushMessageTemplate.m; path = "Leanplum-SDK/Classes/MessageTemplates/LPPushMessageTemplate.m"; sourceTree = "<group>"; };
+		462C6595D55891022AD6B65FF118441B /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Leanplum-SDK/Resources/Assets.xcassets"; sourceTree = "<group>"; };
+		4926AC5CE069F28A2FDFEDCFE4A1E790 /* LPHitView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPHitView.m; path = "Leanplum-SDK/Classes/MessageTemplates/Views/LPHitView.m"; sourceTree = "<group>"; };
+		49A7B49F954CA1DBD0CECC5F41F1EA21 /* LPLocalNotificationsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPLocalNotificationsManager.m; path = "Leanplum-SDK/Classes/Notifications/Local/LPLocalNotificationsManager.m"; sourceTree = "<group>"; };
+		4B98EB5A2E3B4CE647888B9722538C44 /* Pods-leanplumios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-leanplumios.modulemap"; sourceTree = "<group>"; };
+		4E1360F51C158C0368629ACEC67057CD /* LPAES.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPAES.m; path = "Leanplum-SDK/Classes/Utilities/Encryption/LPAES.m"; sourceTree = "<group>"; };
+		50E36745B28C5DF2E333A08882E2C8AC /* LPDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDatabase.m; path = "Leanplum-SDK/Classes/Utilities/LPDatabase.m"; sourceTree = "<group>"; };
+		52453F993AD1FD05451A5C438F931F21 /* LPEventCallback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPEventCallback.m; path = "Leanplum-SDK/Classes/Features/Events/LPEventCallback.m"; sourceTree = "<group>"; };
+		54015E6E2F0F165104D056EF41992812 /* LPCountAggregator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPCountAggregator.h; path = "Leanplum-SDK/Classes/Managers/LPCountAggregator.h"; sourceTree = "<group>"; };
+		54F7C7DDCF42B18A260A98D6BBFF5F6E /* NSString+MD5Addition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5Addition.m"; path = "Leanplum-SDK/Classes/Utilities/Vendor/UniqueIdentifier/NSString+MD5Addition.m"; sourceTree = "<group>"; };
+		551D84A3A928441C3AA8FB4375CA5810 /* Pods-leanplumios-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-leanplumios-Info.plist"; sourceTree = "<group>"; };
+		5A8D8E2B86ABA74AE55FC4F9280B230C /* LPRequestSenderTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPRequestSenderTimer.m; path = "Leanplum-SDK/Classes/Managers/Networking/LPRequestSenderTimer.m"; sourceTree = "<group>"; };
+		61662AC9E64F631CF5543BF6EE77082E /* LPWebInterstitialMessageTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPWebInterstitialMessageTemplate.h; path = "Leanplum-SDK/Classes/MessageTemplates/LPWebInterstitialMessageTemplate.h"; sourceTree = "<group>"; };
+		61D78A69BD8E1E5FE3B8B974B77A6D35 /* LPNotificationsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPNotificationsManager.h; path = "Leanplum-SDK/Classes/Notifications/LPNotificationsManager.h"; sourceTree = "<group>"; };
+		64F4C8D6D8E89450B921124C8AF08625 /* LPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPRequest.h; path = "Leanplum-SDK/Classes/Managers/Networking/LPRequest.h"; sourceTree = "<group>"; };
+		6599D0E79D05AFD536A4F02A2247BB66 /* Leanplum-iOS-SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Leanplum-iOS-SDK.modulemap"; sourceTree = "<group>"; };
+		6637C8852946EBEE2AC2D1B548B1E12C /* LPRequestUUIDHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPRequestUUIDHelper.h; path = "Leanplum-SDK/Classes/Managers/Networking/LPRequestUUIDHelper.h"; sourceTree = "<group>"; };
+		66E378D0678BB33484D7AA5F3B6F206B /* LPAppIconManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPAppIconManager.m; path = "Leanplum-SDK/Classes/Managers/LPAppIconManager.m"; sourceTree = "<group>"; };
+		670CA40CED61E9ED1B7BDA80B92C8D61 /* LPEventCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPEventCallback.h; path = "Leanplum-SDK/Classes/Features/Events/LPEventCallback.h"; sourceTree = "<group>"; };
+		6F5DE1CCF616E47A56A708F3DDDB64F5 /* LPAppRatingMessageTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPAppRatingMessageTemplate.h; path = "Leanplum-SDK/Classes/MessageTemplates/LPAppRatingMessageTemplate.h"; sourceTree = "<group>"; };
+		70436B7377451ABE2F67CFD9D33636DE /* Pods-leanplumios-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-leanplumios-acknowledgements.markdown"; sourceTree = "<group>"; };
+		70C1F020CE435722D0FB81B72F61A856 /* LPRequestFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPRequestFactory.h; path = "Leanplum-SDK/Classes/Managers/Networking/LPRequestFactory.h"; sourceTree = "<group>"; };
+		71900CE50145F2983FEDFD665579514F /* LPRevenueManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPRevenueManager.m; path = "Leanplum-SDK/Classes/Managers/LPRevenueManager.m"; sourceTree = "<group>"; };
+		737AB98565EE4B6CCB4C5056BE3C2BF9 /* LPVar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPVar.m; path = "Leanplum-SDK/Classes/Features/Variables/LPVar.m"; sourceTree = "<group>"; };
+		775AD834B281DF396F09635BC7FF7CAE /* Leanplum-iOS-SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Leanplum-iOS-SDK-Info.plist"; sourceTree = "<group>"; };
+		7872026C2CD0FD2D61DC40CF01B37992 /* LPFeatureFlagManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPFeatureFlagManager.h; path = "Leanplum-SDK/Classes/Internal/FeatureFlag/LPFeatureFlagManager.h"; sourceTree = "<group>"; };
+		798553A78D5A60F3F25AFF277747726E /* Leanplum_Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Leanplum_Reachability.h; path = "Leanplum-SDK/Classes/Utilities/Vendor/Reachability/Leanplum_Reachability.h"; sourceTree = "<group>"; };
+		7C3FDAF1823906D51D9C4E4C19DA3762 /* LPEventDataManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPEventDataManager.m; path = "Leanplum-SDK/Classes/Features/Events/LPEventDataManager.m"; sourceTree = "<group>"; };
+		7C404D47FFF486E2CDC1C4ED26A9CC98 /* LPInterstitialViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPInterstitialViewController.h; path = "Leanplum-SDK/Classes/MessageTemplates/ViewControllers/LPInterstitialViewController.h"; sourceTree = "<group>"; };
+		7C44529C81709AFA8DE773ED299AD697 /* NSString+MD5Addition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5Addition.h"; path = "Leanplum-SDK/Classes/Utilities/Vendor/UniqueIdentifier/NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		7DBA87AF87F0212E00114DB10D078CBF /* LPFeatureFlagManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPFeatureFlagManager.m; path = "Leanplum-SDK/Classes/Internal/FeatureFlag/LPFeatureFlagManager.m"; sourceTree = "<group>"; };
+		7FD7CAC10A6EE517C7B4C5121129A0B8 /* LPAPIConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPAPIConfig.h; path = "Leanplum-SDK/Classes/Managers/Networking/LPAPIConfig.h"; sourceTree = "<group>"; };
+		80CE114BB332CDF73AB1F70CA1754F4F /* LPAppIconManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPAppIconManager.h; path = "Leanplum-SDK/Classes/Managers/LPAppIconManager.h"; sourceTree = "<group>"; };
+		81B39C655E8AE88FC45457C2784E5414 /* LPMessageTemplateUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPMessageTemplateUtilities.h; path = "Leanplum-SDK/Classes/MessageTemplates/ViewControllers/LPMessageTemplateUtilities.h"; sourceTree = "<group>"; };
+		827238D11E447B5584150EACAF1577CF /* LPAppRatingMessageTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPAppRatingMessageTemplate.m; path = "Leanplum-SDK/Classes/MessageTemplates/LPAppRatingMessageTemplate.m"; sourceTree = "<group>"; };
+		86F96787FFF7D07794FDD2B23A801C62 /* LPConfirmMessageTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPConfirmMessageTemplate.h; path = "Leanplum-SDK/Classes/MessageTemplates/LPConfirmMessageTemplate.h"; sourceTree = "<group>"; };
+		8731EC5E0F50C72D3B071C1AFEE3429C /* Leanplum_SocketIO.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Leanplum_SocketIO.m; path = "Leanplum-SDK/Classes/Utilities/Vendor/SocketIO/Leanplum_SocketIO.m"; sourceTree = "<group>"; };
+		8785A9C8B96DE10CA51FC72433A47B1A /* LPMessageTemplateConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPMessageTemplateConstants.h; path = "Leanplum-SDK/Classes/MessageTemplates/LPMessageTemplateConstants.h"; sourceTree = "<group>"; };
+		88BF774BD3292239B51B067B5189FD31 /* LPRichInterstitialMessageTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPRichInterstitialMessageTemplate.m; path = "Leanplum-SDK/Classes/MessageTemplates/LPRichInterstitialMessageTemplate.m"; sourceTree = "<group>"; };
+		8B909BEF9BAA370A379345B9A95C6C00 /* WebInterstitial.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = WebInterstitial.storyboard; path = "Leanplum-SDK/Resources/WebInterstitial.storyboard"; sourceTree = "<group>"; };
+		8BC2A08C658A29EB02BFB2EC6447A35A /* LPOperationQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPOperationQueue.h; path = "Leanplum-SDK/Classes/Utilities/LPOperationQueue.h"; sourceTree = "<group>"; };
+		8C6A197D3DBCB1FC1F33993A8A0233F8 /* LPLocalNotificationsHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPLocalNotificationsHandler.h; path = "Leanplum-SDK/Classes/Notifications/Local/LPLocalNotificationsHandler.h"; sourceTree = "<group>"; };
+		8DA7D278DBDD9943678D24A51F3C661A /* LPJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPJSON.h; path = "Leanplum-SDK/Classes/Utilities/LPJSON.h"; sourceTree = "<group>"; };
+		8DC588349891104D390D96CA4BC2563D /* LPRequestBatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPRequestBatch.m; path = "Leanplum-SDK/Classes/Managers/Networking/LPRequestBatch.m"; sourceTree = "<group>"; };
+		8E67FF161F30A14B2D2401D523007106 /* NSTimer+Blocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+Blocks.m"; path = "Leanplum-SDK/Classes/Utilities/Vendor/NSTimer-Blocks/NSTimer+Blocks.m"; sourceTree = "<group>"; };
+		8F7B94DA28FBFBABA8F3904768B36335 /* LPInbox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPInbox.m; path = "Leanplum-SDK/Classes/Features/Inbox/LPInbox.m"; sourceTree = "<group>"; };
+		913BF38C027546F8D00D74B8DDFE008B /* LPJSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPJSON.m; path = "Leanplum-SDK/Classes/Utilities/LPJSON.m"; sourceTree = "<group>"; };
+		917CF4F0D9FAFCEA62480B7A94211FA1 /* LPLocalNotificationsHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPLocalNotificationsHandler.m; path = "Leanplum-SDK/Classes/Notifications/Local/LPLocalNotificationsHandler.m"; sourceTree = "<group>"; };
+		91ECBE3059FF54E41396B1E05DF7A401 /* LPEventDataManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPEventDataManager.h; path = "Leanplum-SDK/Classes/Features/Events/LPEventDataManager.h"; sourceTree = "<group>"; };
+		94601E3F363F850A1700B36A8D84B40C /* LPVar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPVar.h; path = "Leanplum-SDK/Classes/LPVar.h"; sourceTree = "<group>"; };
+		95B24710FBC33FEB89F29831F0536393 /* LPRequestSenderTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPRequestSenderTimer.h; path = "Leanplum-SDK/Classes/Managers/Networking/LPRequestSenderTimer.h"; sourceTree = "<group>"; };
+		96B238B62FB2B6A13452BCEBCDF19B93 /* LPDeferMessageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDeferMessageManager.h; path = "Leanplum-SDK/Classes/Managers/LPDeferMessageManager.h"; sourceTree = "<group>"; };
+		96D8BE93DD80E6064C16E0049BBAB577 /* LPActionContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPActionContext.h; path = "Leanplum-SDK/Classes/LPActionContext.h"; sourceTree = "<group>"; };
+		995B3A8DCD1FD6F7A389CBB9CD2750B9 /* LPSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPSwizzle.h; path = "Leanplum-SDK/Classes/Utilities/LPSwizzle.h"; sourceTree = "<group>"; };
+		9A64CB94B4AA16A0760402F3294F5322 /* LPPushAskToAskMessageTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPPushAskToAskMessageTemplate.m; path = "Leanplum-SDK/Classes/MessageTemplates/LPPushAskToAskMessageTemplate.m"; sourceTree = "<group>"; };
+		9B1FC866A6141177D531BDA51D2E74DD /* LPMessageTemplateUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPMessageTemplateUtilities.m; path = "Leanplum-SDK/Classes/MessageTemplates/ViewControllers/LPMessageTemplateUtilities.m"; sourceTree = "<group>"; };
+		9C0344ED117A4773C11136927BBA2B85 /* LPRequestBatchFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPRequestBatchFactory.h; path = "Leanplum-SDK/Classes/Managers/Networking/LPRequestBatchFactory.h"; sourceTree = "<group>"; };
+		9D894356576A9F32546F062982328BC1 /* LPContextualValues.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPContextualValues.h; path = "Leanplum-SDK/Classes/Internal/LPContextualValues.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FFB645A9E80F21CCF75270695C9575E /* LPMessageArchiveData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPMessageArchiveData.h; path = "Leanplum-SDK/Classes/Models/LPMessageArchiveData.h"; sourceTree = "<group>"; };
+		9FFC8FD080BEF44835B141BB884B2BC4 /* LPUIAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPUIAlert.m; path = "Leanplum-SDK/Classes/Features/Actions/LPUIAlert.m"; sourceTree = "<group>"; };
+		A05CD15BB81FC7CD296898620DCA9314 /* Leanplum-iOS-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Leanplum-iOS-SDK-prefix.pch"; sourceTree = "<group>"; };
+		A204D93D5923D6CF592881EF64106148 /* LPInterstitialViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPInterstitialViewController.m; path = "Leanplum-SDK/Classes/MessageTemplates/ViewControllers/LPInterstitialViewController.m"; sourceTree = "<group>"; };
+		A52156EAAAA45C8883FE786FFCA263F3 /* FileMD5Hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FileMD5Hash.h; path = "Leanplum-SDK/Classes/Utilities/FileMD5Hash.h"; sourceTree = "<group>"; };
+		A5D9D6A3C56792A6FF321A413B7C5D6D /* Leanplum-iOS-SDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Leanplum-iOS-SDK"; path = Leanplum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6289DC7E961D3BCD9325EF6F72B7CED /* Leanplum_WebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Leanplum_WebSocket.m; path = "Leanplum-SDK/Classes/Utilities/Vendor/WebSocket/Leanplum_WebSocket.m"; sourceTree = "<group>"; };
+		A62B3AC921B998E1DD94CFC1184BCDB1 /* LPIconChangeMessageTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPIconChangeMessageTemplate.h; path = "Leanplum-SDK/Classes/MessageTemplates/LPIconChangeMessageTemplate.h"; sourceTree = "<group>"; };
+		A6825B6A1AE0EB1D4027ECA249317CF1 /* LPPushAskToAskMessageTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPPushAskToAskMessageTemplate.h; path = "Leanplum-SDK/Classes/MessageTemplates/LPPushAskToAskMessageTemplate.h"; sourceTree = "<group>"; };
+		A7A89528C22F9F21721833344940427E /* LPVar-Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LPVar-Internal.h"; path = "Leanplum-SDK/Classes/Features/Variables/LPVar-Internal.h"; sourceTree = "<group>"; };
+		AB3D25AD48E3ABCD253717BD38FBF639 /* LPFeatureFlags.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPFeatureFlags.h; path = "Leanplum-SDK/Classes/Internal/FeatureFlag/LPFeatureFlags.h"; sourceTree = "<group>"; };
+		AC306EF08B84E7FF487615D37E64DF9E /* LPEnumConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPEnumConstants.h; path = "Leanplum-SDK/Classes/Internal/LPEnumConstants.h"; sourceTree = "<group>"; };
+		AD9A578813941B095204A38EE9FA5912 /* LPVarCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPVarCache.m; path = "Leanplum-SDK/Classes/Features/Variables/LPVarCache.m"; sourceTree = "<group>"; };
+		AD9EE7431C8FA5B644F885136331907D /* LPInterstitialMessageTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPInterstitialMessageTemplate.m; path = "Leanplum-SDK/Classes/MessageTemplates/LPInterstitialMessageTemplate.m"; sourceTree = "<group>"; };
+		AE9C432E50F1E2D0DF46425B3681E885 /* LPActionContext-Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LPActionContext-Internal.h"; path = "Leanplum-SDK/Classes/Features/Actions/LPActionContext-Internal.h"; sourceTree = "<group>"; };
+		AF528DA74966F237D705E75180AE830A /* Interstitial.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Interstitial.storyboard; path = "Leanplum-SDK/Resources/Interstitial.storyboard"; sourceTree = "<group>"; };
+		AF84ED6E097628CE33654A14853FEDAF /* LPMessageTemplates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPMessageTemplates.h; path = "Leanplum-SDK/Classes/LPMessageTemplates.h"; sourceTree = "<group>"; };
+		AFE3391D72A27CF01E249FE1E53657EE /* LPMessageArchiveData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPMessageArchiveData.m; path = "Leanplum-SDK/Classes/Models/LPMessageArchiveData.m"; sourceTree = "<group>"; };
+		B0B3E42F5C930F026973604B6C12FB1C /* LPDeferMessageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDeferMessageManager.m; path = "Leanplum-SDK/Classes/Managers/LPDeferMessageManager.m"; sourceTree = "<group>"; };
+		B2B995F75B606912CA15D78A79D40947 /* LPVarCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPVarCache.h; path = "Leanplum-SDK/Classes/Features/Variables/LPVarCache.h"; sourceTree = "<group>"; };
+		B2E754FD1FFDFD2E2C4C34A18CFF7478 /* LPIconChangeMessageTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPIconChangeMessageTemplate.m; path = "Leanplum-SDK/Classes/MessageTemplates/LPIconChangeMessageTemplate.m"; sourceTree = "<group>"; };
+		B3028D5C88ADB7E41E46E72CFBFCA1FD /* LPAlertMessageTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPAlertMessageTemplate.m; path = "Leanplum-SDK/Classes/MessageTemplates/LPAlertMessageTemplate.m"; sourceTree = "<group>"; };
+		B32EF03652315294BA65D483F3DEB70D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B359722A2483944E5D641B3604BD3C5E /* LPSecuredVars.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPSecuredVars.h; path = "Leanplum-SDK/Classes/Features/Variables/LPSecuredVars.h"; sourceTree = "<group>"; };
+		B55EFFA3FF50ABDEF5FB405DC7E9C812 /* LPRequestBatchFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPRequestBatchFactory.m; path = "Leanplum-SDK/Classes/Managers/Networking/LPRequestBatchFactory.m"; sourceTree = "<group>"; };
+		B7BC963284794168E4F4033DA91F620B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		B97EE420E6A9DFC4DD9C1D8218212A3F /* LPRequestBatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPRequestBatch.h; path = "Leanplum-SDK/Classes/Managers/Networking/LPRequestBatch.h"; sourceTree = "<group>"; };
+		BC4614B7B94BF1592759B6C1E48FF40B /* LPOpenUrlMessageTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPOpenUrlMessageTemplate.m; path = "Leanplum-SDK/Classes/MessageTemplates/LPOpenUrlMessageTemplate.m"; sourceTree = "<group>"; };
+		BC6E1BF7710B22957D73A3586C4F0487 /* LPRequestFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPRequestFactory.m; path = "Leanplum-SDK/Classes/Managers/Networking/LPRequestFactory.m"; sourceTree = "<group>"; };
+		BCB1F6427FDBA619D0CF291D61DEF3BC /* Leanplum_WebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Leanplum_WebSocket.h; path = "Leanplum-SDK/Classes/Utilities/Vendor/WebSocket/Leanplum_WebSocket.h"; sourceTree = "<group>"; };
+		BD06063F2BF2DB39D4FCE54914A12E31 /* LPNetworkEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPNetworkEngine.h; path = "Leanplum-SDK/Classes/Managers/Networking/LPNetworkEngine.h"; sourceTree = "<group>"; };
+		BD99CC9D7321F970030BC7A24D672D5B /* LPEnumConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPEnumConstants.m; path = "Leanplum-SDK/Classes/Internal/LPEnumConstants.m"; sourceTree = "<group>"; };
+		BE7934D99AEA6481E1C5CF434F7EC198 /* LPLocalNotificationsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPLocalNotificationsManager.h; path = "Leanplum-SDK/Classes/Notifications/Local/LPLocalNotificationsManager.h"; sourceTree = "<group>"; };
+		BF332F059AA3DBEED62CAC3594EE3726 /* LPOpenUrlMessageTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPOpenUrlMessageTemplate.h; path = "Leanplum-SDK/Classes/MessageTemplates/LPOpenUrlMessageTemplate.h"; sourceTree = "<group>"; };
+		C18C5BF77CFBC0628A947CB4AF7B66A5 /* LPRequestSender.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPRequestSender.m; path = "Leanplum-SDK/Classes/Managers/Networking/LPRequestSender.m"; sourceTree = "<group>"; };
+		C20BBEB0D871FB3ED9960CF347F8D7CF /* LPActionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPActionManager.h; path = "Leanplum-SDK/Classes/Features/Actions/LPActionManager.h"; sourceTree = "<group>"; };
+		C3FBC087AB08B386204CEE47995188B4 /* LPWebInterstitialViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPWebInterstitialViewController.m; path = "Leanplum-SDK/Classes/MessageTemplates/ViewControllers/LPWebInterstitialViewController.m"; sourceTree = "<group>"; };
+		C45E8E26D1A4CFF0EDD632964A67C5B6 /* LPCenterPopupMessageTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPCenterPopupMessageTemplate.m; path = "Leanplum-SDK/Classes/MessageTemplates/LPCenterPopupMessageTemplate.m"; sourceTree = "<group>"; };
+		C508C1E74D0DD3B5A5328BC61FF0EFF8 /* LPInterstitialMessageTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPInterstitialMessageTemplate.h; path = "Leanplum-SDK/Classes/MessageTemplates/LPInterstitialMessageTemplate.h"; sourceTree = "<group>"; };
+		C5BD5C7E723E4032ABA12A13CB98C9B4 /* LPNetworkOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPNetworkOperation.h; path = "Leanplum-SDK/Classes/Managers/Networking/LPNetworkOperation.h"; sourceTree = "<group>"; };
+		C636B286AF58BF24C682F26E9CF08920 /* LeanplumSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LeanplumSocket.m; path = "Leanplum-SDK/Classes/Managers/Networking/LeanplumSocket.m"; sourceTree = "<group>"; };
+		C6A4B7B12D791772868D090E7AF64B3F /* Pods-leanplumios-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-leanplumios-frameworks.sh"; sourceTree = "<group>"; };
+		C720B1C7F6AFEA546FB32E22C4A8F71C /* Pods-leanplumios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-leanplumios-umbrella.h"; sourceTree = "<group>"; };
+		C97474727F09E9B3E0721958E8FA893A /* LeanplumCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LeanplumCompatibility.h; path = "Leanplum-SDK/Classes/LeanplumCompatibility.h"; sourceTree = "<group>"; };
+		CA05381E2739286F6118C90459076D63 /* LPPushNotificationsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPPushNotificationsManager.m; path = "Leanplum-SDK/Classes/Notifications/Push/LPPushNotificationsManager.m"; sourceTree = "<group>"; };
+		CA5C154E4152AFFB4588B6EBA50D668D /* LPLogManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPLogManager.m; path = "Leanplum-SDK/Classes/Managers/LPLogManager.m"; sourceTree = "<group>"; };
+		CA730BE5A2A52865CACC991F9346ABAB /* LPConfirmMessageTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPConfirmMessageTemplate.m; path = "Leanplum-SDK/Classes/MessageTemplates/LPConfirmMessageTemplate.m"; sourceTree = "<group>"; };
+		CBD5D8D74C133FE7528A9F7A254CE9AC /* LPContextualValues.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPContextualValues.m; path = "Leanplum-SDK/Classes/Internal/LPContextualValues.m"; sourceTree = "<group>"; };
+		CBD63861978448B17E44D8D5816B2134 /* LPWebInterstitialViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPWebInterstitialViewController.h; path = "Leanplum-SDK/Classes/MessageTemplates/ViewControllers/LPWebInterstitialViewController.h"; sourceTree = "<group>"; };
+		CEADAECAF8BB722D8CB2E8BC769DF7CF /* LPConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPConstants.m; path = "Leanplum-SDK/Classes/Internal/LPConstants.m"; sourceTree = "<group>"; };
+		CFBF97BBBC416557FDB80796CC369317 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		CFD653E0888755994E0E2DFA03D0C1EC /* LPPushNotificationsHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPPushNotificationsHandler.h; path = "Leanplum-SDK/Classes/Notifications/Push/LPPushNotificationsHandler.h"; sourceTree = "<group>"; };
+		D02073982C5AF077317959921442584F /* LPResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPResponse.m; path = "Leanplum-SDK/Classes/Managers/Networking/LPResponse.m"; sourceTree = "<group>"; };
+		D29FDD4FC1BD0B2126FA88ACB7F2640F /* LPNetworkEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPNetworkEngine.m; path = "Leanplum-SDK/Classes/Managers/Networking/LPNetworkEngine.m"; sourceTree = "<group>"; };
+		D43576CA68CBE4C2BBD6A39BDEC0F7AC /* LPExceptionHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPExceptionHandler.m; path = "Leanplum-SDK/Classes/Internal/Monitoring/LPExceptionHandler.m"; sourceTree = "<group>"; };
+		D4A0A2ABFEDAF2E62E983C3C5EF470F0 /* Pods-leanplumios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-leanplumios.release.xcconfig"; sourceTree = "<group>"; };
+		D656B56EBE2249A81E94E9EC6B9292B1 /* LeanplumCompatibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LeanplumCompatibility.m; path = "Leanplum-SDK/Classes/Internal/LeanplumCompatibility.m"; sourceTree = "<group>"; };
+		D7EDC679608EA538AA81D073E031AF2C /* LPConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPConstants.h; path = "Leanplum-SDK/Classes/Internal/LPConstants.h"; sourceTree = "<group>"; };
+		D998A4F5C6536BF688EEE54A546D3421 /* LPMessageTemplateProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPMessageTemplateProtocol.h; path = "Leanplum-SDK/Classes/MessageTemplates/LPMessageTemplateProtocol.h"; sourceTree = "<group>"; };
+		D9BF00B9FF616F6EB22E296FFABBF21C /* Pods-leanplumios-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-leanplumios-acknowledgements.plist"; sourceTree = "<group>"; };
+		DA1B52F043ADBB464339425CE6433FA7 /* LPInbox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPInbox.h; path = "Leanplum-SDK/Classes/LPInbox.h"; sourceTree = "<group>"; };
+		DAA47FD10F1A3DEB37DB61C536A375DE /* Pods-leanplumios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-leanplumios.debug.xcconfig"; sourceTree = "<group>"; };
+		DAF282BF28881749A074408D4CCB4A37 /* LPExceptionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPExceptionHandler.h; path = "Leanplum-SDK/Classes/Internal/Monitoring/LPExceptionHandler.h"; sourceTree = "<group>"; };
+		DB3DC22F7FF934AB447EC5804E168AF2 /* LPHitView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPHitView.h; path = "Leanplum-SDK/Classes/MessageTemplates/Views/LPHitView.h"; sourceTree = "<group>"; };
+		DB960ABC7A5DC6FE20CBC5A2CB76E873 /* Leanplum-iOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Leanplum-iOS-SDK-dummy.m"; sourceTree = "<group>"; };
+		DC5D75E67FF883B7A85D5F7FC3CC4559 /* LeanplumInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LeanplumInternal.h; path = "Leanplum-SDK/Classes/Internal/LeanplumInternal.h"; sourceTree = "<group>"; };
+		DCD2F56130E1DAE9F4A7B65C779131FB /* Pods-leanplumios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-leanplumios-dummy.m"; sourceTree = "<group>"; };
+		EBFF4DC41B7BB3F69524A909C877A188 /* LPEventCallbackManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPEventCallbackManager.h; path = "Leanplum-SDK/Classes/Features/Events/LPEventCallbackManager.h"; sourceTree = "<group>"; };
+		EF0FCD8ABDD2CBD353B9EFAC8E3D3ED3 /* Leanplum_AsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Leanplum_AsyncSocket.m; path = "Leanplum-SDK/Classes/Utilities/Vendor/WebSocket/AsyncSocket/Leanplum_AsyncSocket.m"; sourceTree = "<group>"; };
+		F01A6BFCD2A3BF50B5860C67747088A5 /* LPPushNotificationsHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPPushNotificationsHandler.m; path = "Leanplum-SDK/Classes/Notifications/Push/LPPushNotificationsHandler.m"; sourceTree = "<group>"; };
+		F05DE1B516E4F9AC9F969C5BF7EEA59B /* Popup.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Popup.storyboard; path = "Leanplum-SDK/Resources/Popup.storyboard"; sourceTree = "<group>"; };
+		F06D8113F774601C79B1361A68E8BA9D /* LPFileManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPFileManager.m; path = "Leanplum-SDK/Classes/Managers/LPFileManager.m"; sourceTree = "<group>"; };
+		F2BB2AAB72FD0B48A89E47C15E61D359 /* LPRevenueManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPRevenueManager.h; path = "Leanplum-SDK/Classes/Managers/LPRevenueManager.h"; sourceTree = "<group>"; };
+		F448E17C1B8C727915F66A901FA2A7A7 /* LPUIAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPUIAlert.h; path = "Leanplum-SDK/Classes/Features/Actions/LPUIAlert.h"; sourceTree = "<group>"; };
+		F4DE08AB3A1FFC6EB1E85DEF7A61764F /* Leanplum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Leanplum.h; path = "Leanplum-SDK/Classes/Leanplum.h"; sourceTree = "<group>"; };
+		F720F77AE5915F2EFA56078A67D54546 /* LPPopupViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPPopupViewController.m; path = "Leanplum-SDK/Classes/MessageTemplates/ViewControllers/LPPopupViewController.m"; sourceTree = "<group>"; };
+		F72E9B2358438EF47C41F40B254777BD /* LPNotificationsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPNotificationsManager.m; path = "Leanplum-SDK/Classes/Notifications/LPNotificationsManager.m"; sourceTree = "<group>"; };
+		F7510DE2AC6146E3A08CC73165582230 /* LPRegisterDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPRegisterDevice.h; path = "Leanplum-SDK/Classes/Managers/LPRegisterDevice.h"; sourceTree = "<group>"; };
+		F7588407EA8301D96B74763E1E64AE0C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F8422ACA9714D0003D8DB73AE2AF4628 /* LPMessageTemplates.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPMessageTemplates.m; path = "Leanplum-SDK/Classes/LPMessageTemplates.m"; sourceTree = "<group>"; };
+		F8605CB3E45C02F0F5BAFCB856A6540A /* FileMD5Hash.c */ = {isa = PBXFileReference; includeInIndex = 1; name = FileMD5Hash.c; path = "Leanplum-SDK/Classes/Utilities/FileMD5Hash.c"; sourceTree = "<group>"; };
+		F8C002FCCB487E7D72209874D7BB3E0B /* LPRequestUUIDHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPRequestUUIDHelper.m; path = "Leanplum-SDK/Classes/Managers/Networking/LPRequestUUIDHelper.m"; sourceTree = "<group>"; };
+		F974365AF41115B70157744418B654C5 /* ResourceBundle-Leanplum-iOS-SDK-Leanplum-iOS-SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Leanplum-iOS-SDK-Leanplum-iOS-SDK-Info.plist"; sourceTree = "<group>"; };
+		FABBDAC70D858B72641A9A6A4C773CC6 /* LPOperationQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPOperationQueue.m; path = "Leanplum-SDK/Classes/Utilities/LPOperationQueue.m"; sourceTree = "<group>"; };
+		FBB2E02C1501633157E5A1C9E502BC66 /* LPUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPUtils.h; path = "Leanplum-SDK/Classes/Utilities/LPUtils.h"; sourceTree = "<group>"; };
+		FD13F4F79775D2D60DFC5B959FE021C4 /* LPWebInterstitialMessageTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPWebInterstitialMessageTemplate.m; path = "Leanplum-SDK/Classes/MessageTemplates/LPWebInterstitialMessageTemplate.m"; sourceTree = "<group>"; };
+		FE0B2E5A7563BC1C6E64B0A3249C8155 /* LPActionArg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPActionArg.h; path = "Leanplum-SDK/Classes/LPActionArg.h"; sourceTree = "<group>"; };
+		FE4DF7C4FDF9B382D65C3565EAA891C4 /* Leanplum-iOS-SDK-Leanplum-iOS-SDK */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Leanplum-iOS-SDK-Leanplum-iOS-SDK"; path = "Leanplum-iOS-SDK.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4CE142B76B8120A6264E308DA7BD15 /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+IdentifierAddition.h"; path = "Leanplum-SDK/Classes/Utilities/Vendor/UniqueIdentifier/UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		FFC3B64261613DB8D7CB984822178266 /* LPPushNotificationsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPPushNotificationsManager.h; path = "Leanplum-SDK/Classes/Notifications/Push/LPPushNotificationsManager.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C55182A4BC2A491FD21F2E4839A1C31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E78F440E9F7DA5D5A208783F9B13372 /* CFNetwork.framework in Frameworks */,
+				B707F46F0BE81B38C5DFC0E2739DD083 /* Foundation.framework in Frameworks */,
+				C38965BBE86C072EC5AF05C4148AD273 /* Security.framework in Frameworks */,
+				BB34CA197FED55DE065FD8E2F0BAD47D /* SystemConfiguration.framework in Frameworks */,
+				B41D0EC3F62F723D0D5958F663E1602A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22CFDEA037DE10D67DE5F4D9E3D9B98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE57A08BFAC5FEA85439A71F967DEE9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5917220A827D1F212FD6FBB4EC1ADE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08380E698BD31D756853C856F9692FB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCD4E6AEE5660225C2105AE2E84AFA7A /* Leanplum-iOS-SDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		55254DDA10A1FC563FC030DC7DB0E4BC /* Pods-leanplumios */ = {
+			isa = PBXGroup;
+			children = (
+				4B98EB5A2E3B4CE647888B9722538C44 /* Pods-leanplumios.modulemap */,
+				70436B7377451ABE2F67CFD9D33636DE /* Pods-leanplumios-acknowledgements.markdown */,
+				D9BF00B9FF616F6EB22E296FFABBF21C /* Pods-leanplumios-acknowledgements.plist */,
+				DCD2F56130E1DAE9F4A7B65C779131FB /* Pods-leanplumios-dummy.m */,
+				C6A4B7B12D791772868D090E7AF64B3F /* Pods-leanplumios-frameworks.sh */,
+				551D84A3A928441C3AA8FB4375CA5810 /* Pods-leanplumios-Info.plist */,
+				C720B1C7F6AFEA546FB32E22C4A8F71C /* Pods-leanplumios-umbrella.h */,
+				DAA47FD10F1A3DEB37DB61C536A375DE /* Pods-leanplumios.debug.xcconfig */,
+				D4A0A2ABFEDAF2E62E983C3C5EF470F0 /* Pods-leanplumios.release.xcconfig */,
+			);
+			name = "Pods-leanplumios";
+			path = "Target Support Files/Pods-leanplumios";
+			sourceTree = "<group>";
+		};
+		7CDE6DE63296D1B2E51167D995840D99 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				462C6595D55891022AD6B65FF118441B /* Assets.xcassets */,
+				AF528DA74966F237D705E75180AE830A /* Interstitial.storyboard */,
+				F05DE1B516E4F9AC9F969C5BF7EEA59B /* Popup.storyboard */,
+				8B909BEF9BAA370A379345B9A95C6C00 /* WebInterstitial.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9C9F684814B5E33F37537A7A983066FA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0EA8C35B2DF32EAA4D18695E0ADF295C /* CFNetwork.framework */,
+				B32EF03652315294BA65D483F3DEB70D /* Foundation.framework */,
+				B7BC963284794168E4F4033DA91F620B /* Security.framework */,
+				CFBF97BBBC416557FDB80796CC369317 /* SystemConfiguration.framework */,
+				F7588407EA8301D96B74763E1E64AE0C /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9DF9A8B99DD94F14FBDEFF5109EDC227 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5D9D6A3C56792A6FF321A413B7C5D6D /* Leanplum-iOS-SDK */,
+				FE4DF7C4FDF9B382D65C3565EAA891C4 /* Leanplum-iOS-SDK-Leanplum-iOS-SDK */,
+				1A7E6C5AB2CC39B63BC6D54DFF7D1505 /* Pods-leanplumios */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C9F684814B5E33F37537A7A983066FA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C475E90ABFA1ADB1EECA7CB4750F6BF5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6599D0E79D05AFD536A4F02A2247BB66 /* Leanplum-iOS-SDK.modulemap */,
+				DB960ABC7A5DC6FE20CBC5A2CB76E873 /* Leanplum-iOS-SDK-dummy.m */,
+				775AD834B281DF396F09635BC7FF7CAE /* Leanplum-iOS-SDK-Info.plist */,
+				A05CD15BB81FC7CD296898620DCA9314 /* Leanplum-iOS-SDK-prefix.pch */,
+				24E3149288D4591FA5A4DD667CDEEB68 /* Leanplum-iOS-SDK-umbrella.h */,
+				15E60E950AEFF970CCD24E2FEA946CAC /* Leanplum-iOS-SDK.debug.xcconfig */,
+				31D6780904EA16B471745D9D2AD7B970 /* Leanplum-iOS-SDK.release.xcconfig */,
+				F974365AF41115B70157744418B654C5 /* ResourceBundle-Leanplum-iOS-SDK-Leanplum-iOS-SDK-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Leanplum-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		C717C6F0B65D712D1CFCA49AC047A9F8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				55254DDA10A1FC563FC030DC7DB0E4BC /* Pods-leanplumios */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
+				08380E698BD31D756853C856F9692FB8 /* Pods */,
+				9DF9A8B99DD94F14FBDEFF5109EDC227 /* Products */,
+				C717C6F0B65D712D1CFCA49AC047A9F8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		FCD4E6AEE5660225C2105AE2E84AFA7A /* Leanplum-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				F8605CB3E45C02F0F5BAFCB856A6540A /* FileMD5Hash.c */,
+				A52156EAAAA45C8883FE786FFCA263F3 /* FileMD5Hash.h */,
+				F4DE08AB3A1FFC6EB1E85DEF7A61764F /* Leanplum.h */,
+				1224B6107B53C01494E50F52971EEB2B /* Leanplum.m */,
+				429E652FD85940D008AC97C4ADDC1EAE /* Leanplum_AsyncSocket.h */,
+				EF0FCD8ABDD2CBD353B9EFAC8E3D3ED3 /* Leanplum_AsyncSocket.m */,
+				798553A78D5A60F3F25AFF277747726E /* Leanplum_Reachability.h */,
+				32739275FF24AC79F8FE72B6CB570156 /* Leanplum_Reachability.m */,
+				1ED43AFE38B9B0697BC792B94F5C7E2D /* Leanplum_SocketIO.h */,
+				8731EC5E0F50C72D3B071C1AFEE3429C /* Leanplum_SocketIO.m */,
+				BCB1F6427FDBA619D0CF291D61DEF3BC /* Leanplum_WebSocket.h */,
+				A6289DC7E961D3BCD9325EF6F72B7CED /* Leanplum_WebSocket.m */,
+				C97474727F09E9B3E0721958E8FA893A /* LeanplumCompatibility.h */,
+				D656B56EBE2249A81E94E9EC6B9292B1 /* LeanplumCompatibility.m */,
+				DC5D75E67FF883B7A85D5F7FC3CC4559 /* LeanplumInternal.h */,
+				331F5EF636169F0CACAAEE727421AAE2 /* LeanplumSocket.h */,
+				C636B286AF58BF24C682F26E9CF08920 /* LeanplumSocket.m */,
+				FE0B2E5A7563BC1C6E64B0A3249C8155 /* LPActionArg.h */,
+				2F5A3315F2250628E5DDF705BFA01FB8 /* LPActionArg.m */,
+				96D8BE93DD80E6064C16E0049BBAB577 /* LPActionContext.h */,
+				264B503FC2C18A2D64A5AB59DE346724 /* LPActionContext.m */,
+				AE9C432E50F1E2D0DF46425B3681E885 /* LPActionContext-Internal.h */,
+				C20BBEB0D871FB3ED9960CF347F8D7CF /* LPActionManager.h */,
+				2581E069C6EB70ECA255CD32B621F257 /* LPActionManager.m */,
+				0CCEA9108812AA03F3E72A76B69F0463 /* LPAES.h */,
+				4E1360F51C158C0368629ACEC67057CD /* LPAES.m */,
+				302A9D98E75A8CEB357D3CDE50F7B39E /* LPAlertMessageTemplate.h */,
+				B3028D5C88ADB7E41E46E72CFBFCA1FD /* LPAlertMessageTemplate.m */,
+				7FD7CAC10A6EE517C7B4C5121129A0B8 /* LPAPIConfig.h */,
+				02AA118461664E191B865637E464E102 /* LPAPIConfig.m */,
+				80CE114BB332CDF73AB1F70CA1754F4F /* LPAppIconManager.h */,
+				66E378D0678BB33484D7AA5F3B6F206B /* LPAppIconManager.m */,
+				6F5DE1CCF616E47A56A708F3DDDB64F5 /* LPAppRatingMessageTemplate.h */,
+				827238D11E447B5584150EACAF1577CF /* LPAppRatingMessageTemplate.m */,
+				317BC9DB87048DA7AF54C040061094E8 /* LPCenterPopupMessageTemplate.h */,
+				C45E8E26D1A4CFF0EDD632964A67C5B6 /* LPCenterPopupMessageTemplate.m */,
+				86F96787FFF7D07794FDD2B23A801C62 /* LPConfirmMessageTemplate.h */,
+				CA730BE5A2A52865CACC991F9346ABAB /* LPConfirmMessageTemplate.m */,
+				D7EDC679608EA538AA81D073E031AF2C /* LPConstants.h */,
+				CEADAECAF8BB722D8CB2E8BC769DF7CF /* LPConstants.m */,
+				9D894356576A9F32546F062982328BC1 /* LPContextualValues.h */,
+				CBD5D8D74C133FE7528A9F7A254CE9AC /* LPContextualValues.m */,
+				54015E6E2F0F165104D056EF41992812 /* LPCountAggregator.h */,
+				2E0FDEA8EB0FF521195F6CC4F98AFF6E /* LPCountAggregator.m */,
+				3E5F7DC20A4FEA69660F39C95C033687 /* LPDatabase.h */,
+				50E36745B28C5DF2E333A08882E2C8AC /* LPDatabase.m */,
+				96B238B62FB2B6A13452BCEBCDF19B93 /* LPDeferMessageManager.h */,
+				B0B3E42F5C930F026973604B6C12FB1C /* LPDeferMessageManager.m */,
+				AC306EF08B84E7FF487615D37E64DF9E /* LPEnumConstants.h */,
+				BD99CC9D7321F970030BC7A24D672D5B /* LPEnumConstants.m */,
+				670CA40CED61E9ED1B7BDA80B92C8D61 /* LPEventCallback.h */,
+				52453F993AD1FD05451A5C438F931F21 /* LPEventCallback.m */,
+				EBFF4DC41B7BB3F69524A909C877A188 /* LPEventCallbackManager.h */,
+				248D44C4B7048E5649117A09FD00D75E /* LPEventCallbackManager.m */,
+				91ECBE3059FF54E41396B1E05DF7A401 /* LPEventDataManager.h */,
+				7C3FDAF1823906D51D9C4E4C19DA3762 /* LPEventDataManager.m */,
+				DAF282BF28881749A074408D4CCB4A37 /* LPExceptionHandler.h */,
+				D43576CA68CBE4C2BBD6A39BDEC0F7AC /* LPExceptionHandler.m */,
+				7872026C2CD0FD2D61DC40CF01B37992 /* LPFeatureFlagManager.h */,
+				7DBA87AF87F0212E00114DB10D078CBF /* LPFeatureFlagManager.m */,
+				AB3D25AD48E3ABCD253717BD38FBF639 /* LPFeatureFlags.h */,
+				36D1525A1E82D9E3FF51EB9F0B7EAAFA /* LPFileManager.h */,
+				F06D8113F774601C79B1361A68E8BA9D /* LPFileManager.m */,
+				1121800DCABBF21BF0AF02C350D54BCB /* LPFileTransferManager.h */,
+				3EF7E9635407CC58EC9EC86B58BB885F /* LPFileTransferManager.m */,
+				DB3DC22F7FF934AB447EC5804E168AF2 /* LPHitView.h */,
+				4926AC5CE069F28A2FDFEDCFE4A1E790 /* LPHitView.m */,
+				A62B3AC921B998E1DD94CFC1184BCDB1 /* LPIconChangeMessageTemplate.h */,
+				B2E754FD1FFDFD2E2C4C34A18CFF7478 /* LPIconChangeMessageTemplate.m */,
+				DA1B52F043ADBB464339425CE6433FA7 /* LPInbox.h */,
+				8F7B94DA28FBFBABA8F3904768B36335 /* LPInbox.m */,
+				2CF73DD15037D9A8B6ECC9F91178D75B /* LPInternalState.h */,
+				12DBCCF6DEB291BF1CBDB89837E7004A /* LPInternalState.m */,
+				C508C1E74D0DD3B5A5328BC61FF0EFF8 /* LPInterstitialMessageTemplate.h */,
+				AD9EE7431C8FA5B644F885136331907D /* LPInterstitialMessageTemplate.m */,
+				7C404D47FFF486E2CDC1C4ED26A9CC98 /* LPInterstitialViewController.h */,
+				A204D93D5923D6CF592881EF64106148 /* LPInterstitialViewController.m */,
+				8DA7D278DBDD9943678D24A51F3C661A /* LPJSON.h */,
+				913BF38C027546F8D00D74B8DDFE008B /* LPJSON.m */,
+				3B5BEA97046CB4C4955181758124700F /* LPKeychainWrapper.h */,
+				0B93ADF8C9FAB0534DE9D64DFC148C32 /* LPKeychainWrapper.m */,
+				8C6A197D3DBCB1FC1F33993A8A0233F8 /* LPLocalNotificationsHandler.h */,
+				917CF4F0D9FAFCEA62480B7A94211FA1 /* LPLocalNotificationsHandler.m */,
+				BE7934D99AEA6481E1C5CF434F7EC198 /* LPLocalNotificationsManager.h */,
+				49A7B49F954CA1DBD0CECC5F41F1EA21 /* LPLocalNotificationsManager.m */,
+				1254F57F7F9FD8A4BD258155E81B7EDB /* LPLogManager.h */,
+				CA5C154E4152AFFB4588B6EBA50D668D /* LPLogManager.m */,
+				9FFB645A9E80F21CCF75270695C9575E /* LPMessageArchiveData.h */,
+				AFE3391D72A27CF01E249FE1E53657EE /* LPMessageArchiveData.m */,
+				8785A9C8B96DE10CA51FC72433A47B1A /* LPMessageTemplateConstants.h */,
+				D998A4F5C6536BF688EEE54A546D3421 /* LPMessageTemplateProtocol.h */,
+				AF84ED6E097628CE33654A14853FEDAF /* LPMessageTemplates.h */,
+				F8422ACA9714D0003D8DB73AE2AF4628 /* LPMessageTemplates.m */,
+				81B39C655E8AE88FC45457C2784E5414 /* LPMessageTemplateUtilities.h */,
+				9B1FC866A6141177D531BDA51D2E74DD /* LPMessageTemplateUtilities.m */,
+				1BD60B6682993C09964AD1C2F98BB378 /* LPNetworkConstants.h */,
+				BD06063F2BF2DB39D4FCE54914A12E31 /* LPNetworkEngine.h */,
+				D29FDD4FC1BD0B2126FA88ACB7F2640F /* LPNetworkEngine.m */,
+				2B5E7747CE76DCC3965673E8F96104DB /* LPNetworkFactory.h */,
+				25BB78787F3CED9B89D4A0448A6E2E56 /* LPNetworkFactory.m */,
+				C5BD5C7E723E4032ABA12A13CB98C9B4 /* LPNetworkOperation.h */,
+				35CF1DB007125B2021F079D74157BEEE /* LPNetworkOperation.m */,
+				2DD47EDF6647F1A558E5B58ED6782A7A /* LPNetworkProtocol.h */,
+				15FEDFEDC44E0DC36E566338DB1510E3 /* LPNotificationsConstants.h */,
+				61D78A69BD8E1E5FE3B8B974B77A6D35 /* LPNotificationsManager.h */,
+				F72E9B2358438EF47C41F40B254777BD /* LPNotificationsManager.m */,
+				BF332F059AA3DBEED62CAC3594EE3726 /* LPOpenUrlMessageTemplate.h */,
+				BC4614B7B94BF1592759B6C1E48FF40B /* LPOpenUrlMessageTemplate.m */,
+				8BC2A08C658A29EB02BFB2EC6447A35A /* LPOperationQueue.h */,
+				FABBDAC70D858B72641A9A6A4C773CC6 /* LPOperationQueue.m */,
+				3C0D3A6BEAAD94606A05097B819D7FB9 /* LPPopupViewController.h */,
+				F720F77AE5915F2EFA56078A67D54546 /* LPPopupViewController.m */,
+				A6825B6A1AE0EB1D4027ECA249317CF1 /* LPPushAskToAskMessageTemplate.h */,
+				9A64CB94B4AA16A0760402F3294F5322 /* LPPushAskToAskMessageTemplate.m */,
+				0C6CF5427BDF576E521E5E7A1DEB6C06 /* LPPushMessageTemplate.h */,
+				44BA26B225C92A5BE27338065BB9F8CF /* LPPushMessageTemplate.m */,
+				CFD653E0888755994E0E2DFA03D0C1EC /* LPPushNotificationsHandler.h */,
+				F01A6BFCD2A3BF50B5860C67747088A5 /* LPPushNotificationsHandler.m */,
+				FFC3B64261613DB8D7CB984822178266 /* LPPushNotificationsManager.h */,
+				CA05381E2739286F6118C90459076D63 /* LPPushNotificationsManager.m */,
+				F7510DE2AC6146E3A08CC73165582230 /* LPRegisterDevice.h */,
+				0049F6B5154A5A5E88C8EBA0BBB9B635 /* LPRegisterDevice.m */,
+				02B3F70B68921C56B33DA87A37805ADE /* LPRegisterForPushMessageTemplate.h */,
+				3B16AB715F5F9C1AD7D7EB8512DD2F61 /* LPRegisterForPushMessageTemplate.m */,
+				64F4C8D6D8E89450B921124C8AF08625 /* LPRequest.h */,
+				0E2DDC5FD532E2195AB971015A878E40 /* LPRequest.m */,
+				B97EE420E6A9DFC4DD9C1D8218212A3F /* LPRequestBatch.h */,
+				8DC588349891104D390D96CA4BC2563D /* LPRequestBatch.m */,
+				9C0344ED117A4773C11136927BBA2B85 /* LPRequestBatchFactory.h */,
+				B55EFFA3FF50ABDEF5FB405DC7E9C812 /* LPRequestBatchFactory.m */,
+				70C1F020CE435722D0FB81B72F61A856 /* LPRequestFactory.h */,
+				BC6E1BF7710B22957D73A3586C4F0487 /* LPRequestFactory.m */,
+				041292A6B678EBD88569EBEDA47348BC /* LPRequestSender.h */,
+				C18C5BF77CFBC0628A947CB4AF7B66A5 /* LPRequestSender.m */,
+				95B24710FBC33FEB89F29831F0536393 /* LPRequestSenderTimer.h */,
+				5A8D8E2B86ABA74AE55FC4F9280B230C /* LPRequestSenderTimer.m */,
+				6637C8852946EBEE2AC2D1B548B1E12C /* LPRequestUUIDHelper.h */,
+				F8C002FCCB487E7D72209874D7BB3E0B /* LPRequestUUIDHelper.m */,
+				16C8F25D72328109BF8D236DED24C799 /* LPResponse.h */,
+				D02073982C5AF077317959921442584F /* LPResponse.m */,
+				F2BB2AAB72FD0B48A89E47C15E61D359 /* LPRevenueManager.h */,
+				71900CE50145F2983FEDFD665579514F /* LPRevenueManager.m */,
+				00FF483ED847323A07786C3CD7133EFE /* LPRichInterstitialMessageTemplate.h */,
+				88BF774BD3292239B51B067B5189FD31 /* LPRichInterstitialMessageTemplate.m */,
+				B359722A2483944E5D641B3604BD3C5E /* LPSecuredVars.h */,
+				2B1340E07D909D72033CF989E149F56F /* LPSecuredVars.m */,
+				995B3A8DCD1FD6F7A389CBB9CD2750B9 /* LPSwizzle.h */,
+				35E8C6152E0CC39FB6D05EAA0D90E295 /* LPSwizzle.m */,
+				F448E17C1B8C727915F66A901FA2A7A7 /* LPUIAlert.h */,
+				9FFC8FD080BEF44835B141BB884B2BC4 /* LPUIAlert.m */,
+				FBB2E02C1501633157E5A1C9E502BC66 /* LPUtils.h */,
+				13C2E10FA09CE44F7EA7B2FD1F6FD463 /* LPUtils.m */,
+				94601E3F363F850A1700B36A8D84B40C /* LPVar.h */,
+				737AB98565EE4B6CCB4C5056BE3C2BF9 /* LPVar.m */,
+				A7A89528C22F9F21721833344940427E /* LPVar-Internal.h */,
+				B2B995F75B606912CA15D78A79D40947 /* LPVarCache.h */,
+				AD9A578813941B095204A38EE9FA5912 /* LPVarCache.m */,
+				61662AC9E64F631CF5543BF6EE77082E /* LPWebInterstitialMessageTemplate.h */,
+				FD13F4F79775D2D60DFC5B959FE021C4 /* LPWebInterstitialMessageTemplate.m */,
+				CBD63861978448B17E44D8D5816B2134 /* LPWebInterstitialViewController.h */,
+				C3FBC087AB08B386204CEE47995188B4 /* LPWebInterstitialViewController.m */,
+				7C44529C81709AFA8DE773ED299AD697 /* NSString+MD5Addition.h */,
+				54F7C7DDCF42B18A260A98D6BBFF5F6E /* NSString+MD5Addition.m */,
+				27DBFD124B90F2651CF6D431413C9967 /* NSTimer+Blocks.h */,
+				8E67FF161F30A14B2D2401D523007106 /* NSTimer+Blocks.m */,
+				FF4CE142B76B8120A6264E308DA7BD15 /* UIDevice+IdentifierAddition.h */,
+				0EB0A82C1B8526DA99D2088E3BA3EC9A /* UIDevice+IdentifierAddition.m */,
+				7CDE6DE63296D1B2E51167D995840D99 /* Resources */,
+				C475E90ABFA1ADB1EECA7CB4750F6BF5 /* Support Files */,
+			);
+			name = "Leanplum-iOS-SDK";
+			path = "Leanplum-iOS-SDK";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8769C9536EFF5B497A88150CD6581538 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BBCCEE127D3CB74C488F9951258D63F /* Pods-leanplumios-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E4376AC43B28FB95F02BDD708E64025 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B8EF3667F3DAB899164AB39F3D2FC5 /* FileMD5Hash.h in Headers */,
+				6DA3DBFF32862B161227D5CDC7F35047 /* Leanplum.h in Headers */,
+				DA6B7F672D4CABFB5EC9FF44EE54700D /* Leanplum-iOS-SDK-umbrella.h in Headers */,
+				F10B730AAD453D03F1717BFFB981AC8D /* Leanplum_AsyncSocket.h in Headers */,
+				1737EB130361BF661ED5589D249498A5 /* Leanplum_Reachability.h in Headers */,
+				90E4626FD20ECC8E8C95DA9869387DCB /* Leanplum_SocketIO.h in Headers */,
+				CD4A369B08958B820AB72342981694F9 /* Leanplum_WebSocket.h in Headers */,
+				2679CC3FCE909E207E70979A98AD3125 /* LeanplumCompatibility.h in Headers */,
+				DE0F54015F5E2CD0BD12A20ADD6CC01A /* LeanplumInternal.h in Headers */,
+				B816E5E2A56FD39948D9EC422A3FF979 /* LeanplumSocket.h in Headers */,
+				21199C61AAB64160E1D3129C6D942DE6 /* LPActionArg.h in Headers */,
+				7D9130BC60924BBC8C77BACDBA5C8C1A /* LPActionContext.h in Headers */,
+				336636D8D65793E17605F4EBEEFAB95C /* LPActionContext-Internal.h in Headers */,
+				7DD0ECBF41989BE6570D6AC8487084D1 /* LPActionManager.h in Headers */,
+				BADAB686232C0D8FF9E81A907DDE1FE8 /* LPAES.h in Headers */,
+				1F660C49B36A635EC6B6F5074430A9EE /* LPAlertMessageTemplate.h in Headers */,
+				A9D84C4CC515C237D0E60C8414123DA6 /* LPAPIConfig.h in Headers */,
+				8C8173A5DA8D7AEF8A951F9822E3AED6 /* LPAppIconManager.h in Headers */,
+				91A4E43F26C7B35F712DFB9E5569C25A /* LPAppRatingMessageTemplate.h in Headers */,
+				99534653B9E5D89344BBBAEA0B534177 /* LPCenterPopupMessageTemplate.h in Headers */,
+				32B8C3B4D7DF60EE5E91917BDF59B854 /* LPConfirmMessageTemplate.h in Headers */,
+				434644C0B54A8DFA58C6862FACA38AAB /* LPConstants.h in Headers */,
+				E2077FDCFCFEC654EE101DE46EC825F3 /* LPContextualValues.h in Headers */,
+				91A65D596CBCD0D3BE5E2F6112DD870C /* LPCountAggregator.h in Headers */,
+				ECF6BDAB8D2BEDE2A85BF6F7B066539A /* LPDatabase.h in Headers */,
+				10221419EF75D5EB3B49E672DD418044 /* LPDeferMessageManager.h in Headers */,
+				900E3A4B2F1BBAB4DA7EEE8A82F7C702 /* LPEnumConstants.h in Headers */,
+				F454EE4FE1278C5BE050EEAE417FD91B /* LPEventCallback.h in Headers */,
+				A1445FADD5437FF7C31529341A1C5906 /* LPEventCallbackManager.h in Headers */,
+				A0CA400B547E9F57780CCAC388C49FDB /* LPEventDataManager.h in Headers */,
+				C5BE5D0FDE03CC1237FD8A126A882657 /* LPExceptionHandler.h in Headers */,
+				7D01D34CC05E2D41A282C757C7C2FC80 /* LPFeatureFlagManager.h in Headers */,
+				9C2C23B90C0FF6FB515963F789557210 /* LPFeatureFlags.h in Headers */,
+				72C4F1212800D3FA8919AEC83FDF0D21 /* LPFileManager.h in Headers */,
+				4901680ED92601E5706FFE84178D3C83 /* LPFileTransferManager.h in Headers */,
+				7551A34E89778EA2C8144BC41ECE88C3 /* LPHitView.h in Headers */,
+				1B8A03D7B00801A9B7CD2A81ED45CEE9 /* LPIconChangeMessageTemplate.h in Headers */,
+				A5E22DF63EE4C687CFC2237989187747 /* LPInbox.h in Headers */,
+				BB7D6C441754C2DD25A6AAEF0642877A /* LPInternalState.h in Headers */,
+				89DE74A570CDBF843EB04670EAF32379 /* LPInterstitialMessageTemplate.h in Headers */,
+				2D5465D14D60BC02A51AB6156B4AB0CF /* LPInterstitialViewController.h in Headers */,
+				5998803382AFE698158DF4DA84B96797 /* LPJSON.h in Headers */,
+				1FFF959591B68EAD0F2159CA224AF99C /* LPKeychainWrapper.h in Headers */,
+				18EB96B31D5C405174B6427E7FED531F /* LPLocalNotificationsHandler.h in Headers */,
+				A153B6F8A8B75BC3062E985AD6909EB0 /* LPLocalNotificationsManager.h in Headers */,
+				EF4ADC4009901576AC6EA80ED139E2C8 /* LPLogManager.h in Headers */,
+				A9FBAA57C07953EBB39335FB660C3004 /* LPMessageArchiveData.h in Headers */,
+				E41FD0B61D7E4F2E2D50ADF7A62F8FB4 /* LPMessageTemplateConstants.h in Headers */,
+				99F2BCCABF3E527C9A923B0E8345CAB3 /* LPMessageTemplateProtocol.h in Headers */,
+				C4EFEEB2BAFE76EF953846847AA0C80E /* LPMessageTemplates.h in Headers */,
+				F2B9792E6F3A03043E7AFF183AFC6506 /* LPMessageTemplateUtilities.h in Headers */,
+				AE51F2DDBA334355770AD102A8FE1DBC /* LPNetworkConstants.h in Headers */,
+				B1FE14F60D250C36C60EA2CE7C0D4249 /* LPNetworkEngine.h in Headers */,
+				CB240052AB76830DC6131AE41F12AFB8 /* LPNetworkFactory.h in Headers */,
+				7BFA2D1D9DA4D3DB8CE23CFB8F0D553C /* LPNetworkOperation.h in Headers */,
+				5B13842E6E8282040E2DB4A616CBE5B9 /* LPNetworkProtocol.h in Headers */,
+				2C002B7EA49148313F95D215BDE0CE5A /* LPNotificationsConstants.h in Headers */,
+				B5E84B0E4A2A0E625F1A0123AAF95C44 /* LPNotificationsManager.h in Headers */,
+				9EF7F2219EDB9C6DCDD6FF0DC17DDEA4 /* LPOpenUrlMessageTemplate.h in Headers */,
+				D7DFA937477B16FBD4FA25E306543D86 /* LPOperationQueue.h in Headers */,
+				0A602173091118279D398997BF0C2697 /* LPPopupViewController.h in Headers */,
+				73EA34796C2E618EE8BB3A4CCE596F95 /* LPPushAskToAskMessageTemplate.h in Headers */,
+				EE1FC2F962F1626A34DC18B522415134 /* LPPushMessageTemplate.h in Headers */,
+				177CDCCCB8C96CE7006BD6E5ECBB6911 /* LPPushNotificationsHandler.h in Headers */,
+				1A0368DE66DF229D436631BA40D15584 /* LPPushNotificationsManager.h in Headers */,
+				4529DDEE1C68673F580035C8E9E1EB8C /* LPRegisterDevice.h in Headers */,
+				04EA1C8F37C9FAA31D9AA72938D2E897 /* LPRegisterForPushMessageTemplate.h in Headers */,
+				45906D152C57BC196443F404EB7B28B8 /* LPRequest.h in Headers */,
+				51AE99ED2249F87104E240A3839A67D6 /* LPRequestBatch.h in Headers */,
+				10B32B1AA5B121AB1A163EDC9B080BC4 /* LPRequestBatchFactory.h in Headers */,
+				313D24E0777EA0C0F667EAACC4392A55 /* LPRequestFactory.h in Headers */,
+				0E5BC4671B58A9D30F5948CCC0E30722 /* LPRequestSender.h in Headers */,
+				9BE22831F690A05875C961E4CA3279F3 /* LPRequestSenderTimer.h in Headers */,
+				4507B858D846AC22223B3A4997ACAAB3 /* LPRequestUUIDHelper.h in Headers */,
+				0E4310AF0F29DEFE13365B4721A5E7D8 /* LPResponse.h in Headers */,
+				31B3CA3245CBDA2C40639B19F77458CC /* LPRevenueManager.h in Headers */,
+				D7F376CCA2F036217E7C999DB0CB58FF /* LPRichInterstitialMessageTemplate.h in Headers */,
+				D0DCA4C9F68CCB7D2704F35463BE999D /* LPSecuredVars.h in Headers */,
+				70ADB02555766995945154877F83C55D /* LPSwizzle.h in Headers */,
+				796C7630502A6E7FAEDBA46BFDBAA62A /* LPUIAlert.h in Headers */,
+				8C110C0EB24AA6247077BF81EEBA519F /* LPUtils.h in Headers */,
+				F78AEA03DC39D04D041C6EE4E6BDC5B1 /* LPVar.h in Headers */,
+				22B38081554103F212BB664FE74AED52 /* LPVar-Internal.h in Headers */,
+				F0E03E9B0BA23AFEFB0F543DED4FBB21 /* LPVarCache.h in Headers */,
+				150FF3A9D34C3AC2FACC2D4962D7A738 /* LPWebInterstitialMessageTemplate.h in Headers */,
+				5F72FBD0D5AF08F5D2B8EBB9FF30BF09 /* LPWebInterstitialViewController.h in Headers */,
+				2A77EB0D76574AB5B1B94D35F4BA8E34 /* NSString+MD5Addition.h in Headers */,
+				623C4C0CBA01EACFF20442ED10DB3342 /* NSTimer+Blocks.h in Headers */,
+				EE273AFF835CF56FF176C3AD2F83797A /* UIDevice+IdentifierAddition.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5C170F0F318D74025FF3DF0E260BAEA4 /* Leanplum-iOS-SDK-Leanplum-iOS-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 881B00F9732FD9F0E397DD1E3B7DEBA1 /* Build configuration list for PBXNativeTarget "Leanplum-iOS-SDK-Leanplum-iOS-SDK" */;
+			buildPhases = (
+				2062E17B25BE1E4BB7C3F88D86DEBA32 /* Sources */,
+				F5917220A827D1F212FD6FBB4EC1ADE5 /* Frameworks */,
+				AB04DA2484A9E6BD8405709D74C7EDC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Leanplum-iOS-SDK-Leanplum-iOS-SDK";
+			productName = "Leanplum-iOS-SDK";
+			productReference = FE4DF7C4FDF9B382D65C3565EAA891C4 /* Leanplum-iOS-SDK-Leanplum-iOS-SDK */;
+			productType = "com.apple.product-type.bundle";
+		};
+		97DDAE39EF90C81F9EC6137C4DC573B6 /* Pods-leanplumios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C175B6086ED9A87A7F8AD953F61666A /* Build configuration list for PBXNativeTarget "Pods-leanplumios" */;
+			buildPhases = (
+				8769C9536EFF5B497A88150CD6581538 /* Headers */,
+				81B785D46CE13769EC15E93B6F8F9FE2 /* Sources */,
+				E22CFDEA037DE10D67DE5F4D9E3D9B98 /* Frameworks */,
+				06B2E692E07D2013516D6E325C0D7ACC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				095B19782B66F287C267BF6DDBE4574D /* PBXTargetDependency */,
+			);
+			name = "Pods-leanplumios";
+			productName = Pods_leanplumios;
+			productReference = 1A7E6C5AB2CC39B63BC6D54DFF7D1505 /* Pods-leanplumios */;
+			productType = "com.apple.product-type.framework";
+		};
+		9AFA897182D086184589EAA155942D5B /* Leanplum-iOS-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 105F10B3B04DA1E8CC9E25DD138F793A /* Build configuration list for PBXNativeTarget "Leanplum-iOS-SDK" */;
+			buildPhases = (
+				9E4376AC43B28FB95F02BDD708E64025 /* Headers */,
+				6502A04B472F17281C3152932519299E /* Sources */,
+				4C55182A4BC2A491FD21F2E4839A1C31 /* Frameworks */,
+				6684E7B4C27D6EF555F955426F876387 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21CA7FF52A164740E2D1F9133092B088 /* PBXTargetDependency */,
+			);
+			name = "Leanplum-iOS-SDK";
+			productName = Leanplum;
+			productReference = A5D9D6A3C56792A6FF321A413B7C5D6D /* Leanplum-iOS-SDK */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9DF9A8B99DD94F14FBDEFF5109EDC227 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AFA897182D086184589EAA155942D5B /* Leanplum-iOS-SDK */,
+				5C170F0F318D74025FF3DF0E260BAEA4 /* Leanplum-iOS-SDK-Leanplum-iOS-SDK */,
+				97DDAE39EF90C81F9EC6137C4DC573B6 /* Pods-leanplumios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06B2E692E07D2013516D6E325C0D7ACC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6684E7B4C27D6EF555F955426F876387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113A105DE4BFD2D1568D9F53AC3FD866 /* Leanplum-iOS-SDK-Leanplum-iOS-SDK in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB04DA2484A9E6BD8405709D74C7EDC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31E82FD68FD553A25850FEE90E5B404 /* Assets.xcassets in Resources */,
+				977121F910067E695D1C074C8F98CF36 /* Interstitial.storyboard in Resources */,
+				FC14A06DBFFCC13C8423AEB5E160BF33 /* Popup.storyboard in Resources */,
+				16B1835397A562D0A3250347D8341770 /* WebInterstitial.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2062E17B25BE1E4BB7C3F88D86DEBA32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6502A04B472F17281C3152932519299E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				878FCA962E8F5D69440A62E1624882A0 /* FileMD5Hash.c in Sources */,
+				0CFA7245FA962B16DF9C621D0913324C /* Leanplum.m in Sources */,
+				2422490DEB33FF3EC8FB320968366349 /* Leanplum-iOS-SDK-dummy.m in Sources */,
+				F8DD9D075ADDEEE486D824A3D38AEF90 /* Leanplum_AsyncSocket.m in Sources */,
+				159E2A717F8378867E3CB0D7C9B9AD72 /* Leanplum_Reachability.m in Sources */,
+				DC1D68FC5A0505D95BA3926614784259 /* Leanplum_SocketIO.m in Sources */,
+				4F53CB041E494F98FE3F738D9750DC82 /* Leanplum_WebSocket.m in Sources */,
+				ABC9D61EE043E3A2AAC771E7E7FBB6A3 /* LeanplumCompatibility.m in Sources */,
+				C0AE4E80DFCF9B14D9D19E9C17B38DAA /* LeanplumSocket.m in Sources */,
+				AFE525E09E0071559E286295E50167B9 /* LPActionArg.m in Sources */,
+				B32449A9268B8210AA6C9DDDB67365E7 /* LPActionContext.m in Sources */,
+				D89665C1954E9A122AB61DA39ADA160B /* LPActionManager.m in Sources */,
+				8CF23EB2E61E574950F30D9EC64F3695 /* LPAES.m in Sources */,
+				2362508F732163FB9C124E5D089158A5 /* LPAlertMessageTemplate.m in Sources */,
+				72368CBA5D05583AF394C8F0304A1E92 /* LPAPIConfig.m in Sources */,
+				71C34E2480D8A0CE7DF2D15E1F61DB9C /* LPAppIconManager.m in Sources */,
+				9BA119EAE999ECCC4E3526A60E534DD2 /* LPAppRatingMessageTemplate.m in Sources */,
+				C8B823D6F9841D73DF84E879A534AB24 /* LPCenterPopupMessageTemplate.m in Sources */,
+				711F2678E0A57A634341E1978967ECF9 /* LPConfirmMessageTemplate.m in Sources */,
+				883CF1AB215AE2A4430F3A7EE3C1EE92 /* LPConstants.m in Sources */,
+				093B7DB52819F2B2E84B1880FDAD0924 /* LPContextualValues.m in Sources */,
+				2ADBAC7B8A4694D5B20E420157643ABE /* LPCountAggregator.m in Sources */,
+				725536A8C2481849C1EF8A442B943941 /* LPDatabase.m in Sources */,
+				72AFBE9063A818F2D04B1D938411A70B /* LPDeferMessageManager.m in Sources */,
+				96236A79A5A5F1E59635D4662B273055 /* LPEnumConstants.m in Sources */,
+				C4A53A3243323D07CD350F867D445E10 /* LPEventCallback.m in Sources */,
+				E7DC4A9CD42D678472BB74953F399729 /* LPEventCallbackManager.m in Sources */,
+				B209978C094E3B39F354D8CE392EAA3E /* LPEventDataManager.m in Sources */,
+				A2B7E5818ACAB2590969D75172D13E9C /* LPExceptionHandler.m in Sources */,
+				F2D2E421F71B31918C95BBBD369807A2 /* LPFeatureFlagManager.m in Sources */,
+				CBB57F679E3F079D0EC4A7BD72309395 /* LPFileManager.m in Sources */,
+				FFE98A51D025AC329472AFC54F861FFD /* LPFileTransferManager.m in Sources */,
+				F4F5A4F9CE2A285E13BFA34750591870 /* LPHitView.m in Sources */,
+				D6D0D330EBC69EBB59CF9CDA92EEB8EF /* LPIconChangeMessageTemplate.m in Sources */,
+				F9AF6B7E9A575E9D36BAE50292C5EB54 /* LPInbox.m in Sources */,
+				CA1C88D228AE65C6CB9ABEF57749A38F /* LPInternalState.m in Sources */,
+				AB336F7A520916ED0F70033130A7BF00 /* LPInterstitialMessageTemplate.m in Sources */,
+				36B2C0FF5CC78C50B1BAB94A754A4899 /* LPInterstitialViewController.m in Sources */,
+				2C40CFE174570D81252C7A31BDA3D639 /* LPJSON.m in Sources */,
+				C394B0BCCAD84D450E6D73A4B2827F2E /* LPKeychainWrapper.m in Sources */,
+				7DB6E8676AB59156044173FBE145AC0C /* LPLocalNotificationsHandler.m in Sources */,
+				FAC75CDEE9441B647570041DA9CB751E /* LPLocalNotificationsManager.m in Sources */,
+				A1ED811638FEF338CE8022BC9391808B /* LPLogManager.m in Sources */,
+				C564CC01EC561F02E9D293FA6ADCFA28 /* LPMessageArchiveData.m in Sources */,
+				710EC8D725CEB5D4743188A4240817BF /* LPMessageTemplates.m in Sources */,
+				56FA31D19BC3930BC55FE762836CACA3 /* LPMessageTemplateUtilities.m in Sources */,
+				A7D2A2285C0A23ABF1B2B7BA74243100 /* LPNetworkEngine.m in Sources */,
+				07F02E18276228C181908E78D9EAAAD1 /* LPNetworkFactory.m in Sources */,
+				4D6537103CFA198A81F21485746157C9 /* LPNetworkOperation.m in Sources */,
+				302AEB489B7962C3AF70FD4A68CE1B7F /* LPNotificationsManager.m in Sources */,
+				1EF5343D6E548B04B2E859CA227F0A48 /* LPOpenUrlMessageTemplate.m in Sources */,
+				0FF8292E04A235B4272948E1220DD75D /* LPOperationQueue.m in Sources */,
+				57E0DA5A3D06B1FC32D9CFE8B952EA34 /* LPPopupViewController.m in Sources */,
+				B9F4E35BFFFACDCA2B203498FD36D64D /* LPPushAskToAskMessageTemplate.m in Sources */,
+				09925627CC6C3E2EA548B1A0646F89D5 /* LPPushMessageTemplate.m in Sources */,
+				03FFC8EABDA88D89276CED439F95F19A /* LPPushNotificationsHandler.m in Sources */,
+				3C8FE594CC82CA56A5D2C1B0252FD30A /* LPPushNotificationsManager.m in Sources */,
+				EBBE221A25F1E1B7C1FEDC98EE0E9249 /* LPRegisterDevice.m in Sources */,
+				46EDC78DD0E4360FB1FCC67CDBF007B7 /* LPRegisterForPushMessageTemplate.m in Sources */,
+				EFC4F64225976B2A97573A10FF39C730 /* LPRequest.m in Sources */,
+				16674DFB6A5DCDCCB1EA5A5294A75281 /* LPRequestBatch.m in Sources */,
+				D96ADECC8B075E9C80D500D6CFDB54CA /* LPRequestBatchFactory.m in Sources */,
+				F3FB21CAA20A9E4624ECD3868A46C68A /* LPRequestFactory.m in Sources */,
+				8044DF105609DB2EDBBB8E3F5733516E /* LPRequestSender.m in Sources */,
+				E67CBC1C8F5BD772B7992B492A57ABF6 /* LPRequestSenderTimer.m in Sources */,
+				D1B0AA344CAC610EF5BC2B761AA9A2BC /* LPRequestUUIDHelper.m in Sources */,
+				BB7A8E71A9C887358B7F82183BB0EC30 /* LPResponse.m in Sources */,
+				BBC15FC4BBB379CAD105B10638915759 /* LPRevenueManager.m in Sources */,
+				020E16CB6C110C463F45A1DBDBECD84C /* LPRichInterstitialMessageTemplate.m in Sources */,
+				8E5DA93666EC7500FBF24DBD3AAF4A20 /* LPSecuredVars.m in Sources */,
+				B4B2B326B415178D802EF5E6486915BA /* LPSwizzle.m in Sources */,
+				ED060DF01BCBDE41D69B70CCC102872F /* LPUIAlert.m in Sources */,
+				7F9872CE32E0E6879A2408AA1BC28273 /* LPUtils.m in Sources */,
+				D105FF85990477860270C8AB326AAA0B /* LPVar.m in Sources */,
+				893BA0021E55EB90B6DCC9A7A3136C0D /* LPVarCache.m in Sources */,
+				394F393B85A2784C69FAC3CC00FC57E4 /* LPWebInterstitialMessageTemplate.m in Sources */,
+				0F537474B1FBD03C7348018F80888EC0 /* LPWebInterstitialViewController.m in Sources */,
+				CC471ED9AB873DCC6B23A4C6E0FA26B4 /* NSString+MD5Addition.m in Sources */,
+				9462AF0CBF61C69DB3C346CE1DB443E0 /* NSTimer+Blocks.m in Sources */,
+				861ABA19FE27BE11FBFDEE5E46FB82DD /* UIDevice+IdentifierAddition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81B785D46CE13769EC15E93B6F8F9FE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43FA1392C8832BEB2BCD0E60A6FD38FB /* Pods-leanplumios-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		095B19782B66F287C267BF6DDBE4574D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Leanplum-iOS-SDK";
+			target = 9AFA897182D086184589EAA155942D5B /* Leanplum-iOS-SDK */;
+			targetProxy = C783B9B06C9D378D54074DDC179AC136 /* PBXContainerItemProxy */;
+		};
+		21CA7FF52A164740E2D1F9133092B088 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Leanplum-iOS-SDK-Leanplum-iOS-SDK";
+			target = 5C170F0F318D74025FF3DF0E260BAEA4 /* Leanplum-iOS-SDK-Leanplum-iOS-SDK */;
+			targetProxy = 64F66D130CBAEA04CCF0AF3B4D4A4C4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		382B495F22F3FC17ED17733BD22D5DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4A0A2ABFEDAF2E62E983C3C5EF470F0 /* Pods-leanplumios.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-leanplumios/Pods-leanplumios-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-leanplumios/Pods-leanplumios.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		73686268CC66F0D08B6A2FF9E1161832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15E60E950AEFF970CCD24E2FEA946CAC /* Leanplum-iOS-SDK.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Leanplum-iOS-SDK/Leanplum-iOS-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Leanplum-iOS-SDK/Leanplum-iOS-SDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Leanplum-iOS-SDK/Leanplum-iOS-SDK.modulemap";
+				PRODUCT_MODULE_NAME = Leanplum;
+				PRODUCT_NAME = Leanplum;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9D141AFE6864A2B683C62CA0E25901B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D6780904EA16B471745D9D2AD7B970 /* Leanplum-iOS-SDK.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Leanplum-iOS-SDK";
+				IBSC_MODULE = Leanplum;
+				INFOPLIST_FILE = "Target Support Files/Leanplum-iOS-SDK/ResourceBundle-Leanplum-iOS-SDK-Leanplum-iOS-SDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = "Leanplum-iOS-SDK";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A0D6FB1FC9E853026CEBB4A9ECF189B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15E60E950AEFF970CCD24E2FEA946CAC /* Leanplum-iOS-SDK.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Leanplum-iOS-SDK";
+				IBSC_MODULE = Leanplum;
+				INFOPLIST_FILE = "Target Support Files/Leanplum-iOS-SDK/ResourceBundle-Leanplum-iOS-SDK-Leanplum-iOS-SDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = "Leanplum-iOS-SDK";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D5B2309EC8497D4254935B48560F5773 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAA47FD10F1A3DEB37DB61C536A375DE /* Pods-leanplumios.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-leanplumios/Pods-leanplumios-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-leanplumios/Pods-leanplumios.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F147C1D0ECE1E6BB43966CD503B7D8F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D6780904EA16B471745D9D2AD7B970 /* Leanplum-iOS-SDK.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Leanplum-iOS-SDK/Leanplum-iOS-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Leanplum-iOS-SDK/Leanplum-iOS-SDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Leanplum-iOS-SDK/Leanplum-iOS-SDK.modulemap";
+				PRODUCT_MODULE_NAME = Leanplum;
+				PRODUCT_NAME = Leanplum;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C175B6086ED9A87A7F8AD953F61666A /* Build configuration list for PBXNativeTarget "Pods-leanplumios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B2309EC8497D4254935B48560F5773 /* Debug */,
+				382B495F22F3FC17ED17733BD22D5DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		105F10B3B04DA1E8CC9E25DD138F793A /* Build configuration list for PBXNativeTarget "Leanplum-iOS-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73686268CC66F0D08B6A2FF9E1161832 /* Debug */,
+				F147C1D0ECE1E6BB43966CD503B7D8F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4214E6946993DF02ED98D89047C64016 /* Debug */,
+				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		881B00F9732FD9F0E397DD1E3B7DEBA1 /* Build configuration list for PBXNativeTarget "Leanplum-iOS-SDK-Leanplum-iOS-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D6FB1FC9E853026CEBB4A9ECF189B1 /* Debug */,
+				9D141AFE6864A2B683C62CA0E25901B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
