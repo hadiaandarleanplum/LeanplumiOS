@@ -17,14 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gameBgImg" translatesAutoresizingMaskIntoConstraints="NO" id="Kue-0O-ajA">
+                                <rect key="frame" x="0.0" y="0.0" width="427" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fun Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufF-BB-F8T">
-                                <rect key="frame" x="89.5" y="67" width="235.5" height="64.5"/>
+                                <rect key="frame" x="88.5" y="67" width="237.5" height="66.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="54"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="-2" height="2"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxJ-o8-cxb">
-                                <rect key="frame" x="109" y="376" width="197" height="65"/>
+                                <rect key="frame" x="109" y="378" width="197" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="197" id="fw3-mC-jKC"/>
                                     <constraint firstAttribute="height" constant="65" id="hG2-B6-P49"/>
@@ -36,7 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMe-4Y-OP1">
-                                <rect key="frame" x="109" y="244" width="197" height="65"/>
+                                <rect key="frame" x="109" y="246" width="197" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="Nla-Qp-pqt"/>
                                     <constraint firstAttribute="width" constant="197" id="sPv-an-Oqp"/>
@@ -77,6 +83,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="gameBgImg" destination="Kue-0O-ajA" id="CBK-cQ-Ygi"/>
+                        <outlet property="gameTitle" destination="ufF-BB-F8T" id="Jzz-jK-Hzp"/>
                         <outlet property="loseBtn" destination="dxJ-o8-cxb" id="pWs-An-9SV"/>
                         <outlet property="resetBtn" destination="MQZ-CW-lZt" id="svK-di-aRJ"/>
                         <outlet property="winBtn" destination="uMe-4Y-OP1" id="6fG-YR-7xX"/>
@@ -88,8 +96,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gameBgImg" width="1600" height="1212"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

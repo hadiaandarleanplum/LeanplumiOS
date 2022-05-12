@@ -14,6 +14,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+ 
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +41,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             return true
         }
 
-    //send userID
+    //send userID if user clicks on the login button
     @IBAction func loginButtonClick(_ sender: UIButton) {
         //get userID from userTextField
         let userID : String = usernameTextField.text ?? ""
@@ -47,7 +49,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         print (userID)
         
         //segue to next main view controller
-      
     }
     
 

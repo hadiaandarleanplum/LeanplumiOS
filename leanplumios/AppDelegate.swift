@@ -47,12 +47,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // the build number (CFBundleVersion).
         //Leanplum.setAppVersion("1.0.0")
         
-        //set variables
+        //Set variables
+        let lpGameBgImg = Var(name: "gameBgImg", file: "gameBgImg") //Background image var
+        let lpGameTitle = Var(name: "gameTitle", string: "Start") // Label of the "Start" button String
+        /*let powerUp = Var(name: "powerUp", dictionary: [ //Dictionary
+          "name": "Turbo Boost",
+          "price": 150,
+          "speedMultiplier": 1.5,
+          "timeout": 15])*/
         
-        
-        //Leanplum.onVariablesChanged {
-            //print(showAds.boolValue())
-        //}
+        Leanplum.onVariablesChanged {
+            print(lpGameBgImg.imageValue() ?? "defaultImageValueAppDelegate")
+            print(lpGameTitle.stringValue ?? "defaultGameTitleAppDelegate")
+        }
 
         
         // Starts a new session and updates the app content from Leanplum.
