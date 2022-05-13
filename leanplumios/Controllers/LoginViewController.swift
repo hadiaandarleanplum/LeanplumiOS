@@ -12,8 +12,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     //IB Outlets
     
+    @IBOutlet weak var playerNameTextField: UITextField!
+    @IBOutlet weak var nameButton: UIButton!
+    
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    
  
     
     
@@ -23,6 +27,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         usernameTextField?.delegate = self
         loginButton?.isUserInteractionEnabled = false
         loginButton?.alpha = 0.5 //keep text field gray until user enters name
+        
+     
     }
     
     
@@ -34,19 +40,34 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             if !text.isEmpty{
                 loginButton?.isUserInteractionEnabled = true
                 loginButton?.alpha = 1.0
+             
             } else {
                 loginButton?.isUserInteractionEnabled = false
                 loginButton?.alpha = 0.5
+         
             }
             return true
         }
 
+
+    //set player name attribute
+    @IBAction func nameButtonClick(_ sender: UIButton) {
+        let playerName: String = playerNameTextField.text ?? ""
+        Leanplum.setUserAttributes(["playerName": playerName])
+        print (playerName)
+        
+        Leanplum.forceContentUpdate()
+    }
+    
+    
     //send userID if user clicks on the login button
     @IBAction func loginButtonClick(_ sender: UIButton) {
         //get userID from userTextField
         let userID : String = usernameTextField.text ?? ""
         Leanplum.setUserId(userID)
         print (userID)
+        
+        Leanplum.forceContentUpdate()
         
         //segue to next main view controller
     }

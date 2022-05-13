@@ -50,11 +50,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Set variables
         let lpGameBgImg = Var(name: "gameBgImg", file: "gameBgImg") //Background image var
         let lpGameTitle = Var(name: "gameTitle", string: "Start") // Label of the "Start" button String
-        /*let powerUp = Var(name: "powerUp", dictionary: [ //Dictionary
+        let lpPowerUp = Var(name: "powerUp", dictionary: [ //Dictionary
           "name": "Turbo Boost",
           "price": 150,
           "speedMultiplier": 1.5,
-          "timeout": 15])*/
+          "timeout": 15])
         
         Leanplum.onVariablesChanged {
             print(lpGameBgImg.imageValue() ?? "defaultImageValueAppDelegate")
