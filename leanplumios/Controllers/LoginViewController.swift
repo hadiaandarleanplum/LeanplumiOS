@@ -23,7 +23,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         usernameTextField?.delegate = self
         loginButton?.isUserInteractionEnabled = false
         loginButton?.alpha = 0.5 //keep text field gray until user enters name

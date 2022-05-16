@@ -41,18 +41,6 @@
                                     <action selector="loseBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ugF-CX-Eg7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMe-4Y-OP1">
-                                <rect key="frame" x="109" y="246" width="197" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="Nla-Qp-pqt"/>
-                                    <constraint firstAttribute="width" constant="197" id="sPv-an-Oqp"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Win"/>
-                                <connections>
-                                    <action selector="winBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T33-H2-f6h"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQZ-CW-lZt">
                                 <rect key="frame" x="109" y="670" width="197" height="65"/>
                                 <constraints>
@@ -63,6 +51,18 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Reset Game"/>
                                 <connections>
                                     <action selector="resetBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OXO-Gv-Ict"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMe-4Y-OP1">
+                                <rect key="frame" x="109" y="246" width="197" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Nla-Qp-pqt"/>
+                                    <constraint firstAttribute="width" constant="197" id="sPv-an-Oqp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Win"/>
+                                <connections>
+                                    <action selector="winBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T33-H2-f6h"/>
                                 </connections>
                             </button>
                         </subviews>

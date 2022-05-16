@@ -20,20 +20,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     let lpGameBgImg = Var(name: "gameBgImg", file: "gameBgImg") //Background image var
     let lpGameTitle = Var(name: "gameTitle", string: "Start") // Label of the "Start" button String
     let lpPowerUp = Var(name: "powerUp", dictionary: [ //Dictionary that u can control values on dashboard
-      "name": "Turbo Boost",
-      "price": 150,
-      "speedMultiplier": 1.5,
-      "timeout": 15])
+      "lpName": "Turbo Boost",
+      "lpPrice": 150,
+      "lpSpeed": 1.5,
+      "lpTimeout": 15])
     
     //define project's variables
-    var powerUp = [
-        "name": "Turbo Boost",
-        "price": 150,
-        "speedMultiplier": 1.5,
-        "timeout": 15
-    ] as [String : Any]
-    
+    var name: String = ""
+    var price: Int = 0
     var speed: Float = 0
+    var timeout: Int = 0
     
     
     override func viewDidLoad() {
@@ -43,9 +39,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
         Leanplum.onVariablesChanged { [self] in
             self.gameTitle.text = self.lpGameTitle.stringValue
             self.gameBgImg.image = self.lpGameBgImg.imageValue()
-            self.speed = (lpPowerUp.object(forKey: "speedMultiplier") as! NSNumber).floatValue
+            
+            self.name = (self.lpPowerUp.object(forKey: "lpName") as! NSString) as String
+            self.price = (self.lpPowerUp.object(forKey: "lpPrice") as! NSNumber).intValue
+            self.speed = (self.lpPowerUp.object(forKey: "lpSpeed") as! NSNumber).floatValue
+            self.timeout = (self.lpPowerUp.object(forKey: "lpTimeout") as! NSNumber).intValue
+            
         }
-        print (speed)
+        
+        print (name,price,speed,timeout)
     }
     
     
@@ -58,11 +60,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func loseBtnClick(_ sender: Any) {
         Leanplum.track("btnClick", params: ["gameStatus": "Lose"])
+        
+        //show a popup to offer the powerup to the user
+       
     }
     
     
     @IBAction func resetBtnClick(_ sender: Any) {
         Leanplum.track("Reset")
+        
+        //maybe do a push notif if they press reset and then put the game on bg or dont play with it for a while
     }
     
   
