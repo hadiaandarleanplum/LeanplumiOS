@@ -17,8 +17,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var gameBgImg: UIImageView!
     
     //define LP variables again in order to use them
-    let lpGameBgImg = Var(name: "gameBgImg", file: "gameBgImg") //Background image var
-    let lpGameTitle = Var(name: "gameTitle", string: "Start") // Label of the "Start" button String
+    let lpGameBgImg = Var(name: "gameBgImg", file: "gamebgimg.jpeg") //Background image var
+    let lpGameTitle = Var(name: "gameTitle", string: "Fun Game") // Label of the "Start" button String
     let lpPowerUp = Var(name: "powerUp", dictionary: [ //Dictionary that u can control values on dashboard
       "lpName": "Turbo Boost",
       "lpPrice": 150,

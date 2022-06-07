@@ -30,6 +30,7 @@
 		5D8BADB26571FAD2D31D0B6C /* Pods-leanplumios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leanplumios.release.xcconfig"; path = "Target Support Files/Pods-leanplumios/Pods-leanplumios.release.xcconfig"; sourceTree = "<group>"; };
 		7636DE6A2829B2D800FB73C8 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		7636DE712829B45400FB73C8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		76F63054284FAD42000E5516 /* leanplumios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = leanplumios.entitlements; sourceTree = "<group>"; };
 		A4204DFAFEBA3A5829231DE4 /* Pods_leanplumios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_leanplumios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC64898134511A8EE2491B69 /* Pods-leanplumios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leanplumios.debug.xcconfig"; path = "Target Support Files/Pods-leanplumios/Pods-leanplumios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +68,7 @@
 		1E8399E527E3214700C876F7 /* leanplumios */ = {
 			isa = PBXGroup;
 			children = (
+				76F63054284FAD42000E5516 /* leanplumios.entitlements */,
 				7636DE692829B22000FB73C8 /* Storyboards */,
 				1E8399E627E3214700C876F7 /* AppDelegate.swift */,
 				1E8399E827E3214700C876F7 /* SceneDelegate.swift */,
@@ -380,6 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = leanplumios/leanplumios.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -413,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = leanplumios/leanplumios.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -430,7 +434,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hadia.leanplumios.leanplumiosdemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hadia.leanplumiosdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

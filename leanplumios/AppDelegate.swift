@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 #if DEBUG
     import AdSupport
@@ -13,7 +14,7 @@ import UIKit
 import Leanplum //using 3.2.1
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate{
     
     // You may notice two different Leanplum apps on your App Settings page, one for development and one for production. To reduce the risk of using the wrong key in your development cycle, we have created two apps for you. We would recommend in while you are in your development phase, using the API keys from the development version of your Leanplum App. Once you are ready to go-live, switch over to the API and production key from the production LP app
     
@@ -29,8 +30,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //UNUserNotificationCenter.current().delegate = self
+        //application.applicationIconBadgeNumber = 0
+        
         #if DEBUG
-            Leanplum.setDeviceId(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
+            //Leanplum.setDeviceId(ASIdentifierManager.shared().advertisingIdentifier.uuidString)
         Leanplum.setAppId(debugAppId,
                           developmentKey:debugDevKey)
           #else
@@ -48,8 +53,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Leanplum.setAppVersion("1.0.0")
         
         //Set variables
-        let lpGameBgImg = Var(name: "gameBgImg", file: "gameBgImg") //Background image var
-        let lpGameTitle = Var(name: "gameTitle", string: "Start") // Label of the "Start" button String
+        let lpGameBgImg = Var(name: "gameBgImg", file: "gamebgimg") //Background image var
+        let lpGameTitle = Var(name: "gameTitle", string: "Fun Game") // Label of the "Start" button String
         let lpPowerUp = Var(name: "powerUp", dictionary: [ //Dictionary
           "lpName": "Turbo Boost",
           "lpPrice": 150,
@@ -60,6 +65,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print(lpGameBgImg.imageValue() ?? "defaultImageValueAppDelegate")
             print(lpGameTitle.stringValue ?? "defaultGameTitleAppDelegate")
         }
+        
+        ///////////////////////////////////////////////
+        //PUSH NOTIFICATION FUNCTION!!!!!!!!!!!!!!!!!!!
+        //iOS-10
+        if #available(iOS 10.0, *){
+            let userNotifCenter = UNUserNotificationCenter.current()
+
+            userNotifCenter.requestAuthorization(options: [.badge,.alert,.sound]){ (granted,error) in
+                //Handle individual parts of the granting here.
+
+                if granted {
+                    DispatchQueue.main.async {
+                        UIApplication.shared.registerForRemoteNotifications()
+                    }
+                }
+            }
+        }
+        //iOS 8-9
+        else if #available(iOS 8.0, *){
+            let settings = UIUserNotificationSettings.init(types: [UIUserNotificationType.alert,UIUserNotificationType.badge,UIUserNotificationType.sound],
+                                            categories: nil)
+            UIApplication.shared.registerUserNotificationSettings(settings)
+            UIApplication.shared.registerForRemoteNotifications()
+        }
+        //iOS 7
+        else{
+            UIApplication.shared.registerForRemoteNotifications(matching:
+                [UIRemoteNotificationType.alert,
+                 UIRemoteNotificationType.badge,
+                 UIRemoteNotificationType.sound])
+        }
+        ///////////////////////////////////////////////
 
         
         // Starts a new session and updates the app content from Leanplum.
@@ -82,6 +119,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+
+    
+    
+    
 
 
 }
