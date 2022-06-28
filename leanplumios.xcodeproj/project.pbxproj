@@ -16,6 +16,7 @@
 		4AF5FE65660CE5494CD1586C /* Pods_leanplumios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4204DFAFEBA3A5829231DE4 /* Pods_leanplumios.framework */; };
 		7636DE6B2829B2D800FB73C8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7636DE6A2829B2D800FB73C8 /* Login.storyboard */; };
 		7636DE722829B45400FB73C8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636DE712829B45400FB73C8 /* LoginViewController.swift */; };
+		76A7FB77286262020049E19A /* AlertWith3Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A7FB76286262020049E19A /* AlertWith3Buttons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5D8BADB26571FAD2D31D0B6C /* Pods-leanplumios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leanplumios.release.xcconfig"; path = "Target Support Files/Pods-leanplumios/Pods-leanplumios.release.xcconfig"; sourceTree = "<group>"; };
 		7636DE6A2829B2D800FB73C8 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		7636DE712829B45400FB73C8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		76A7FB76286262020049E19A /* AlertWith3Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWith3Buttons.swift; sourceTree = "<group>"; };
 		76F63054284FAD42000E5516 /* leanplumios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = leanplumios.entitlements; sourceTree = "<group>"; };
 		A4204DFAFEBA3A5829231DE4 /* Pods_leanplumios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_leanplumios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC64898134511A8EE2491B69 /* Pods-leanplumios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leanplumios.debug.xcconfig"; path = "Target Support Files/Pods-leanplumios/Pods-leanplumios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				7636DE712829B45400FB73C8 /* LoginViewController.swift */,
 				1E8399EA27E3214700C876F7 /* ViewController.swift */,
+				76A7FB76286262020049E19A /* AlertWith3Buttons.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76A7FB77286262020049E19A /* AlertWith3Buttons.swift in Sources */,
 				7636DE722829B45400FB73C8 /* LoginViewController.swift in Sources */,
 				1E8399EB27E3214700C876F7 /* ViewController.swift in Sources */,
 				1E8399E727E3214700C876F7 /* AppDelegate.swift in Sources */,
@@ -387,6 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4XLWYATZ5P;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = leanplumios/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -421,6 +426,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4XLWYATZ5P;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = leanplumios/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -66,6 +66,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
             print(lpGameTitle.stringValue ?? "defaultGameTitleAppDelegate")
         }
         
+   
+        
+        
         ///////////////////////////////////////////////
         //PUSH NOTIFICATION FUNCTION!!!!!!!!!!!!!!!!!!!
         //iOS-10
@@ -96,8 +99,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
                  UIRemoteNotificationType.badge,
                  UIRemoteNotificationType.sound])
         }
+        
         ///////////////////////////////////////////////
-
+        
         
         // Starts a new session and updates the app content from Leanplum.
         Leanplum.start() //Added age attribute for audience
