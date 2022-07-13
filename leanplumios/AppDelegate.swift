@@ -43,6 +43,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
               productionKey: prodProdKey)
           #endif
         
+        AlertWith3Buttons.defineAction()
+        
         // Optional: Tracks in-app purchases automatically as the "Purchase" event.
         // To require valid receipts upon purchase or change your reported
         // currency code from USD, update your app settings.
@@ -102,6 +104,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         
         ///////////////////////////////////////////////
         
+        Leanplum.setAppVersion("2.26.0")
         
         // Starts a new session and updates the app content from Leanplum.
         Leanplum.start() //Added age attribute for audience
