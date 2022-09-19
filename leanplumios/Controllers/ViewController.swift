@@ -35,6 +35,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        Leanplum.advance(state: "ViewController")
+        
         //connect variable to elements on project
         Leanplum.onVariablesChanged { [self] in
             self.gameTitle.text = self.lpGameTitle.stringValue
@@ -68,10 +70,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func resetBtnClick(_ sender: Any) {
         Leanplum.track("Reset")
+        Leanplum.track("btnClick", params: ["gameStatus": "win"])
         
         //maybe do a push notif if they press reset and then put the game on bg or dont play with it for a while
     }
     
+
   
     }
 
