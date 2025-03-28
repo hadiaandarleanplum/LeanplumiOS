@@ -11,7 +11,7 @@ import Leanplum
 
 //#### example Custom template for 3-button Alert
 class AlertWith3Buttons {
-    // MARK: Arguments
+    /*// MARK: Arguments
     static let Name = "3-button Alert iOS"
     
     static let TitleArg = "Title"
@@ -82,5 +82,5 @@ class AlertWith3Buttons {
         alert.addAction(maybe)
         
         return alert
-    }
+    }*/
 }

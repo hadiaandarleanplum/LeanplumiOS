@@ -1,16 +1,26 @@
 PODS:
-  - Leanplum-iOS-SDK (3.2.1)
+  - CleverTap-iOS-SDK (7.1.0):
+    - SDWebImage (~> 5.11)
+  - Leanplum-iOS-SDK (6.5.0):
+    - CleverTap-iOS-SDK (~> 7.0)
+  - SDWebImage (5.20.0):
+    - SDWebImage/Core (= 5.20.0)
+  - SDWebImage/Core (5.20.0)
 
 DEPENDENCIES:
-  - Leanplum-iOS-SDK (= 3.2.1)
+  - Leanplum-iOS-SDK (= 6.5.0)
 
 SPEC REPOS:
   trunk:
+    - CleverTap-iOS-SDK
     - Leanplum-iOS-SDK
+    - SDWebImage
 
 SPEC CHECKSUMS:
-  Leanplum-iOS-SDK: cdf2399abbea271ec50fbc6e274baea1fc9e0bfe
+  CleverTap-iOS-SDK: 571ced90fc6378635db504f9767c62858e2c5286
+  Leanplum-iOS-SDK: 2cc6adce908bf4004b7e8932a34ad0651f96a56f
+  SDWebImage: 73c6079366fea25fa4bb9640d5fb58f0893facd8
 
-PODFILE CHECKSUM: a5766aa20b87aabde2d3a9a11e901c9533ce7e7f
+PODFILE CHECKSUM: 860ac4bbf6ee232534e9d194626a43ce95f1a16d
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.16.2

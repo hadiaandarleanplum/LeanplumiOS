@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var gameTitle: UILabel! //connect text to leanplum variable
     @IBOutlet weak var gameBgImg: UIImageView!
     
-    //define LP variables again in order to use them
+    //define LP variables in order to use them
     let lpGameBgImg = Var(name: "gameBgImg", file: "gamebgimg.jpeg") //Background image var
     let lpGameTitle = Var(name: "gameTitle", string: "Fun Game") // Label of the "Start" button String
     let lpPowerUp = Var(name: "powerUp", dictionary: [ //Dictionary that u can control values on dashboard
@@ -75,7 +75,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //maybe do a push notif if they press reset and then put the game on bg or dont play with it for a while
     }
     
-
+    
   
     }
 

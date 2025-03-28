@@ -6,7 +6,7 @@ target 'leanplumios' do
   use_frameworks!
 
   # Pods for leanplumios
-pod 'Leanplum-iOS-SDK', '3.2.1'
+pod 'Leanplum-iOS-SDK', '6.5.0'
 
 # Uncomment one of the following for Location Services.
 # pod 'Leanplum-iOS-Location', '3.2.1'

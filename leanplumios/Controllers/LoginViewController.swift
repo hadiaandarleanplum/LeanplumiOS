@@ -23,6 +23,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Leanplum.setUserId("hadiaAugust12")
         usernameTextField?.delegate = self
         loginButton?.isUserInteractionEnabled = false
         loginButton?.alpha = 0.5 //keep text field gray until user enters name
@@ -70,6 +71,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         //segue to next main view controller
     }
+    
     
 
     /*
